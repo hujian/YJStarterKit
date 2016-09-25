@@ -22,7 +22,8 @@
 }
 
 - (void)addTestCase:(NSString*)name toSection:(YJTestCaseSection*)section block:(void(^)())block {
-    [section addItem:[RETableViewItem itemWithTitle:name accessoryType:UITableViewCellAccessoryDisclosureIndicator selectionHandler:^(RETableViewItem *item) {
+    [section addItem:[RETableViewItem itemWithTitle:name accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                                   selectionHandler:^(RETableViewItem *item) {
         if (block) {
             block();
         }

@@ -8,6 +8,10 @@
 
 @interface YJAppDelegate : UIResponder <UIApplicationDelegate>
 
+// 设置日志系统
+// DEBUG状态下默认会打印ViewController的didLoad，dealloc事件。不需要的自行继承修改
+- (void)setupLog;
+
 // 正式流程的根，子类覆盖
 - (UIViewController*)rootViewController;
 

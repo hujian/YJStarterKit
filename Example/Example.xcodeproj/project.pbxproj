@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
-		BF2C22F61D97B12F0050CACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F41D97B12F0050CACC /* Main.storyboard */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
 		BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F91D97B12F0050CACC /* LaunchScreen.storyboard */; };
 		BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0F51D97B343004D3C73 /* YJSplashView.m */; };
@@ -28,7 +27,6 @@
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF2C22EE1D97B12F0050CACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF2C22EF1D97B12F0050CACC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF2C22F51D97B12F0050CACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF2C22F71D97B12F0050CACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2C22FA1D97B12F0050CACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2C22FC1D97B12F0050CACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				BF62F0E71D97B343004D3C73 /* StarterKit */,
 				BF2C22EE1D97B12F0050CACC /* AppDelegate.h */,
 				BF2C22EF1D97B12F0050CACC /* AppDelegate.m */,
-				BF2C22F41D97B12F0050CACC /* Main.storyboard */,
 				BF2C22F71D97B12F0050CACC /* Assets.xcassets */,
 				BF2C22F91D97B12F0050CACC /* LaunchScreen.storyboard */,
 				BF2C22FC1D97B12F0050CACC /* Info.plist */,
@@ -242,7 +239,6 @@
 			files = (
 				BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */,
 				BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */,
-				BF2C22F61D97B12F0050CACC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +310,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF2C22F41D97B12F0050CACC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF2C22F51D97B12F0050CACC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF2C22F91D97B12F0050CACC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,5 +1,5 @@
 #import "YJLogger.h"
-#import "XAspect.h"
+#import "Aspects.h"
 
 @interface MyCustomFormatter : NSObject <DDLogFormatter>
 
@@ -36,36 +36,17 @@
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [DDTTYLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
   
-    LogVerbose(@"Logger system start...");
+    LogVerbose(@"system | Logger start...");
+}
+
++ (void)startLogVCProgress {
+    [UIViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
+        LogVerbose(@"flow | %@'s viewDidLoad called", NSStringFromClass([aspectInfo.instance class]));
+    } error:NULL];
+    
+    [UIViewController aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
+        LogVerbose(@"flow | %@'s dealloc called", NSStringFromClass([aspectInfo.instance class]));
+    } error:NULL];
 }
 
 @end
-
-
-#define AtAspect Log
-
-// ----------------------- 页面流程的切面 ------------------
-
-#ifdef DEBUG
-
-#define AtAspectOfClass UIViewController
-@classPatchField(UIViewController)
-
-AspectPatch(-, void, viewDidLoad) {
-    LogVerbose(@"%@'s view did load.", NSStringFromClass([self class]));
-    
-    XAMessageForward(viewDidLoad);
-}
-
-AspectPatch(-, void, dealloc) {
-    LogVerbose(@"%@ dealloc.", NSStringFromClass([self class]));
-    
-    XAMessageForwardDirectly(dealloc);
-}
-
-@end
-
-#undef AtAspectOfClass
-#undef AtAspect
-
-#endif

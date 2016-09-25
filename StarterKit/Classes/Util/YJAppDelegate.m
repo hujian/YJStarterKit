@@ -8,7 +8,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 日志
-    [YJLogger setup];
+    [self setupLog];
   
     // 页面入口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -28,6 +28,11 @@
     }
   
     return YES;
+}
+
+- (void)setupLog {
+    [YJLogger setup];
+    [YJLogger startLogVCProgress];
 }
 
 - (UIViewController*)rootViewController {

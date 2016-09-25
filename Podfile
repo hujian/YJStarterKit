@@ -10,7 +10,7 @@ target 'Example' do
     pod 'AFNetworking'
     pod 'RETableViewManager'
     pod 'CocoaLumberjack', '2.3.0'
-    pod 'XAspect'
+    pod 'Aspects'
     pod 'SDWebImage'
 end
 

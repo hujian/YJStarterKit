@@ -31,4 +31,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 + (void)setup;
 
+// 打印ViewController的事件
++ (void)startLogVCProgress;
+
 @end

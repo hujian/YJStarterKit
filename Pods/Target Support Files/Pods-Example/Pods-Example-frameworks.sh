@@ -53,21 +53,21 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-Example/AFNetworking.framework'
+  install_framework 'Pods-Example/Aspects.framework'
   install_framework 'Pods-Example/CocoaLumberjack.framework'
   install_framework 'Pods-Example/REFormattedNumberField.framework'
   install_framework 'Pods-Example/RETableViewManager.framework'
   install_framework 'Pods-Example/REValidation.framework'
   install_framework 'Pods-Example/SDWebImage.framework'
-  install_framework 'Pods-Example/XAspect.framework'
   install_framework 'Pods-Example/pop.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-Example/AFNetworking.framework'
+  install_framework 'Pods-Example/Aspects.framework'
   install_framework 'Pods-Example/CocoaLumberjack.framework'
   install_framework 'Pods-Example/REFormattedNumberField.framework'
   install_framework 'Pods-Example/RETableViewManager.framework'
   install_framework 'Pods-Example/REValidation.framework'
   install_framework 'Pods-Example/SDWebImage.framework'
-  install_framework 'Pods-Example/XAspect.framework'
   install_framework 'Pods-Example/pop.framework'
 fi
