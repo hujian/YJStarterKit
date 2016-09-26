@@ -5,7 +5,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "CocoaLumberjack.h"
 
 #ifndef Logger_h
 #define Logger_h

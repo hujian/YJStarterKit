@@ -18,7 +18,7 @@
     if (name) {
         section.headerTitle = name;
     }
-  return section;
+    return section;
 }
 
 - (void)addTestCase:(NSString*)name toSection:(YJTestCaseSection*)section block:(void(^)())block {

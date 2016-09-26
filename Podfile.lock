@@ -23,6 +23,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
+  - HexColors (4.0.0)
   - pop (1.0.9)
   - REFormattedNumberField (1.1.6)
   - RETableViewManager (1.7):
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - AFNetworking
   - Aspects
   - CocoaLumberjack (= 2.3.0)
+  - HexColors
   - pop
   - RETableViewManager
   - SDWebImage
@@ -45,10 +47,13 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: d64226eb1793606818adaa5cd284aee0fe78b23e
+
+COCOAPODS: 1.0.1

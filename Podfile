@@ -1,5 +1,4 @@
 platform :ios, '8.0'
-use_frameworks!
 inhibit_all_warnings!
 
 workspace 'YJStarterKit'
@@ -12,6 +11,7 @@ target 'Example' do
     pod 'CocoaLumberjack', '2.3.0'
     pod 'Aspects'
     pod 'SDWebImage'
+    pod 'HexColors'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

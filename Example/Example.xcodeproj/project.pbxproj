@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942433C5A7A0467114B48E0C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C21199D9E1DC2E28107943 /* libPods-Example.a */; };
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
@@ -16,13 +17,15 @@
 		BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FD1D97B3CE004D3C73 /* YJTools.m */; };
 		BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FE1D97B3CE004D3C73 /* YJAppDelegate.m */; };
 		BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FF1D97B3CE004D3C73 /* YJLogger.m */; };
-		E963EF30EE0380DB0E64DE6D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B955EF9846A516005E7F7BBB /* Pods_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50951D98C43700052FDD /* UIColor+YJStarterKit.m */; };
+		BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50981D98C9FB00052FDD /* UIView+YJStarterKit.m */; };
+		BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */; };
+		BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E6B4F0B81B1AE5BD46CDBD9 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B28026FC59E7236005AAAC /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		B955EF9846A516005E7F7BBB /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22E81D97B12F0050CACC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF2C22EE1D97B12F0050CACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +43,15 @@
 		BF62F1001D97B3CE004D3C73 /* YJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTools.h; sourceTree = "<group>"; };
 		BF62F1011D97B3CE004D3C73 /* YJLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLogger.h; sourceTree = "<group>"; };
 		BF62F1021D97B3CE004D3C73 /* YJAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAppDelegate.h; sourceTree = "<group>"; };
+		BF8C50941D98C43700052FDD /* UIColor+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YJStarterKit.h"; sourceTree = "<group>"; };
+		BF8C50951D98C43700052FDD /* UIColor+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YJStarterKit.m"; sourceTree = "<group>"; };
+		BF8C50971D98C9FB00052FDD /* UIView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJStarterKit.h"; sourceTree = "<group>"; };
+		BF8C50981D98C9FB00052FDD /* UIView+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJStarterKit.m"; sourceTree = "<group>"; };
+		BF8C509A1D98CE4300052FDD /* NSArray+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YJStarterKit.h"; sourceTree = "<group>"; };
+		BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YJStarterKit.m"; sourceTree = "<group>"; };
+		BF8C509D1D98D04C00052FDD /* NSDate+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YJStarterKit.h"; sourceTree = "<group>"; };
+		BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YJStarterKit.m"; sourceTree = "<group>"; };
+		D2C21199D9E1DC2E28107943 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E963EF30EE0380DB0E64DE6D /* Pods_Example.framework in Frameworks */,
+				942433C5A7A0467114B48E0C /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +69,7 @@
 		B4507947F2210E5EE2FE50EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B955EF9846A516005E7F7BBB /* Pods_Example.framework */,
+				D2C21199D9E1DC2E28107943 /* libPods-Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +136,7 @@
 			children = (
 				BF62F1061D97B593004D3C73 /* Test */,
 				BF62F0EA1D97B343004D3C73 /* Network */,
+				BF8C50931D98C41E00052FDD /* Category */,
 				BF62F0EB1D97B343004D3C73 /* Util */,
 				BF62F0F31D97B343004D3C73 /* Widget */,
 			);
@@ -168,6 +181,21 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		BF8C50931D98C41E00052FDD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C50941D98C43700052FDD /* UIColor+YJStarterKit.h */,
+				BF8C50951D98C43700052FDD /* UIColor+YJStarterKit.m */,
+				BF8C50971D98C9FB00052FDD /* UIView+YJStarterKit.h */,
+				BF8C50981D98C9FB00052FDD /* UIView+YJStarterKit.m */,
+				BF8C509A1D98CE4300052FDD /* NSArray+YJStarterKit.h */,
+				BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */,
+				BF8C509D1D98D04C00052FDD /* NSDate+YJStarterKit.h */,
+				BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		E16964CB7ECBFD0DD12DD8CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,12 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2C22FF1D97B12F0050CACC /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				41ADACC2943F32969E2CA26D /* Check Pods Manifest.lock */,
+				41ADACC2943F32969E2CA26D /* [CP] Check Pods Manifest.lock */,
 				BF2C22E41D97B12F0050CACC /* Sources */,
 				BF2C22E51D97B12F0050CACC /* Frameworks */,
 				BF2C22E61D97B12F0050CACC /* Resources */,
-				A07D22919ABB004946021F17 /* Embed Pods Frameworks */,
-				ED3C2986598FDD4A482F148D /* Copy Pods Resources */,
+				A07D22919ABB004946021F17 /* [CP] Embed Pods Frameworks */,
+				ED3C2986598FDD4A482F148D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,14 +273,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41ADACC2943F32969E2CA26D /* Check Pods Manifest.lock */ = {
+		41ADACC2943F32969E2CA26D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,14 +288,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A07D22919ABB004946021F17 /* Embed Pods Frameworks */ = {
+		A07D22919ABB004946021F17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,14 +303,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED3C2986598FDD4A482F148D /* Copy Pods Resources */ = {
+		ED3C2986598FDD4A482F148D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,10 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */,
+				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
+				BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */,
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
 				BF62F0FC1D97B343004D3C73 /* YJTestCaseViewController.m in Sources */,
+				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
+				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,
 			);

@@ -22,6 +22,9 @@
 // 显示广告
 - (void)showAD:(NSString*)url;
 
+// 获取当前分辨率下面的splash图片名称
++ (NSString*)splashName;
+
 // 跳过广告的按钮，只有在有广告的情况下才会显示
 // 注意跳过本身的事件，需要调用者自己实现，调用上面的dismiss即可
 @property (nonatomic, strong) UIButton* skipButton;

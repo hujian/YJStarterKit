@@ -39,34 +39,6 @@
     return idfa;
 }
 
-+ (NSString*)splashName {
-    NSString *imageName = nil;
-    int screenHeight = (int)[UIScreen mainScreen].bounds.size.height;
-    switch (screenHeight) {
-        case 480: {
-            imageName = @"LaunchImage-700@2x.png";
-            break;
-        }
-        case 568: {
-            imageName = @"LaunchImage-700-568h@2x.png";
-            break;
-        }
-        case 667: {
-            imageName = @"LaunchImage-800-667h@2x.png";
-            break;
-        }
-        case 736: {
-            imageName = @"LaunchImage-800-Portrait-736h@3x.png";
-            break;
-        }
-        default: {
-            imageName = @"LaunchImage-700@2x.png";
-            break;
-        }
-    }
-    return imageName;
-}
-
 + (NSString *)appVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];
 }
