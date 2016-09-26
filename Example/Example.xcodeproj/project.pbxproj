@@ -54,6 +54,7 @@
 		BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF8C50A01D990BE000052FDD /* YJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTableViewController.h; sourceTree = "<group>"; };
 		BF8C50A11D990BE000052FDD /* YJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTableViewController.m; sourceTree = "<group>"; };
+		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
 		D2C21199D9E1DC2E28107943 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +163,7 @@
 				BF62F0FD1D97B3CE004D3C73 /* YJTools.m */,
 				BF62F1011D97B3CE004D3C73 /* YJLogger.h */,
 				BF62F0FF1D97B3CE004D3C73 /* YJLogger.m */,
+				BF9C985F1D994A3200B7212F /* YJSingletion.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
