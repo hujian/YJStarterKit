@@ -5,16 +5,10 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "RETableViewManager.h"
+#import "YJTableViewController.h"
 
-#define YJTestCaseSection RETableViewSection
-
-@interface YJTestCaseViewController : UITableViewController <RETableViewManagerDelegate>
-
-- (YJTestCaseSection*)addSection:(NSString*)name;
+@interface YJTestCaseViewController : YJTableViewController
 
 - (void)addTestCase:(NSString*)name toSection:(YJTestCaseSection*)section block:(void(^)())block;
-
-@property (strong, nonatomic) RETableViewManager *manager;
 
 @end

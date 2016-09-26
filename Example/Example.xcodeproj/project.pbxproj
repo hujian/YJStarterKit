@@ -21,6 +21,7 @@
 		BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50981D98C9FB00052FDD /* UIView+YJStarterKit.m */; };
 		BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */; };
 		BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */; };
+		BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50A11D990BE000052FDD /* YJTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF8C509D1D98D04C00052FDD /* NSDate+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YJStarterKit.h"; sourceTree = "<group>"; };
 		BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YJStarterKit.m"; sourceTree = "<group>"; };
+		BF8C50A01D990BE000052FDD /* YJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTableViewController.h; sourceTree = "<group>"; };
+		BF8C50A11D990BE000052FDD /* YJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTableViewController.m; sourceTree = "<group>"; };
 		D2C21199D9E1DC2E28107943 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +173,8 @@
 				BF62F0F51D97B343004D3C73 /* YJSplashView.m */,
 				BF62F0F61D97B343004D3C73 /* YJTestCaseViewController.h */,
 				BF62F0F71D97B343004D3C73 /* YJTestCaseViewController.m */,
+				BF8C50A01D990BE000052FDD /* YJTableViewController.h */,
+				BF8C50A11D990BE000052FDD /* YJTableViewController.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
+				BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */,
 				BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */,
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
 				BF62F0FC1D97B343004D3C73 /* YJTestCaseViewController.m in Sources */,

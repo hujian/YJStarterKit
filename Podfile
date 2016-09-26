@@ -12,6 +12,7 @@ target 'Example' do
     pod 'Aspects'
     pod 'SDWebImage'
     pod 'HexColors'
+    pod 'DZNEmptyDataSet'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

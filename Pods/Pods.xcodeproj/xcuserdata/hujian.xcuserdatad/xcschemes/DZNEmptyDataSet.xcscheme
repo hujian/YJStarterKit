@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '983CF465251030A109901E9C501ED14A'
-               BlueprintName = 'REFormattedNumberField'
+               BlueprintIdentifier = '736E57AD5AEFAAF68D47AE4E8FCB8F68'
+               BlueprintName = 'DZNEmptyDataSet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libREFormattedNumberField.a'>
+               BuildableName = 'libDZNEmptyDataSet.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
