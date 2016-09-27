@@ -1,7 +1,8 @@
 #import "YJTestCaseMainListViewController.h"
 #import "ReactiveCocoa.h"
 #import "YJTableViewController.h"
-#import "TestProgressViewController.h"
+#import "YJTestProgressViewController.h"
+#import "YJTestSplahViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -29,7 +30,14 @@
         [self addTestCase:@"进度条" toSection:section block:^() {
             @strongify(self);
             
-            TestProgressViewController* vc = [[TestProgressViewController alloc] initWithNibName:nil bundle:nil];
+            YJTestProgressViewController* vc = [[YJTestProgressViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"splash页面" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestSplahViewController* vc = [[YJTestSplahViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }];
 

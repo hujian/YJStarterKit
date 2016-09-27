@@ -24,13 +24,16 @@
 
 - (RACSignal *)setProgress:(CGFloat)progress duration:(CGFloat)duration {
     if (duration > 0) {
+        @weakify(self);
         return [RACSignal createSignal:^RACDisposable* (id<RACSubscriber> subscriber) {
+            @strongify(self);
             POPBasicAnimation *strokeAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
             strokeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
             strokeAnimation.toValue = @(progress);
             strokeAnimation.duration = duration;
             strokeAnimation.removedOnCompletion = NO;
             strokeAnimation.animationDidApplyBlock = ^(POPAnimation *anim) {
+                @strongify(self);
                 [subscriber sendNext:@(self.progress)];
             };
             [self.circleLayer pop_addAnimation:strokeAnimation forKey:@"layerStrokeAnimation"];
@@ -40,7 +43,6 @@
         self.progress = progress;
         return nil;
     }
-    
 }
 
 - (void)setProgress:(CGFloat)progress {
@@ -69,6 +71,9 @@
     self.circleLayer.lineJoin = kCALineJoinRound;
 
     [self.layer addSublayer:self.circleLayer];
+}
+
+- (void)dealloc {
 }
 
 @end

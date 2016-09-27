@@ -6,6 +6,6 @@
 
 #import "YJTestCaseViewController.h"
 
-@interface TestProgressViewController : YJTestCaseViewController
+@interface YJTestProgressViewController : YJTestCaseViewController
 
 @end
