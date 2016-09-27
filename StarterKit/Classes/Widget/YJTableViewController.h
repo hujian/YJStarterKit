@@ -14,6 +14,7 @@
 
 // 表格的数据
 - (YJTestCaseSection*)addSection:(NSString*)name;
+- (YJTestCaseSection*)addSection:(NSString*)name index:(NSInteger)index;
 
 // 空白页的图片
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView;
@@ -29,7 +30,5 @@
 - (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView;
 // 空白页自定义view
 - (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView;
-
-@property (strong, nonatomic) RETableViewManager *manager;
 
 @end

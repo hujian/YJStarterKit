@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 inhibit_all_warnings!
+use_frameworks!
 
 workspace 'YJStarterKit'
 
@@ -13,6 +14,7 @@ target 'Example' do
     pod 'SDWebImage'
     pod 'HexColors'
     pod 'DZNEmptyDataSet'
+    pod 'ReactiveCocoa'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

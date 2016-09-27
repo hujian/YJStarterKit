@@ -1,7 +1,7 @@
 #import "YJAppDelegate.h"
 #import "YJSplashView.h"
 #import "YJLogger.h"
-#import "YJTestCaseViewController.h"
+#import "YJTestCaseMainListViewController.h"
 
 @implementation YJAppDelegate
 
@@ -43,12 +43,12 @@
 - (UIViewController*)testCaseViewController {
     LogWarn(@"AppDelegat sould overide YJAppDelegate::testCaseViewController");
   
-    YJTestCaseViewController* test = [[YJTestCaseViewController alloc] initWithNibName:nil bundle:nil];
+    YJTestCaseMainListViewController* test = [[YJTestCaseMainListViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:test];
     
     __weak YJAppDelegate* weakSelf = self;
     
-    YJTestCaseSection* section = [test addSection:nil];
+    YJTestCaseSection* section = [test addSection:nil index:0];
     [test addTestCase:@"正常流程" toSection:section block:^() {
         UIViewController* root = [weakSelf rootViewController];
         weakSelf.window.rootViewController = root;

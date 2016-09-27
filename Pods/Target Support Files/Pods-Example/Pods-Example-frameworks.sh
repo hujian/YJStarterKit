@@ -82,3 +82,32 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects/Aspects.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HexColors/HexColors.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/REFormattedNumberField/REFormattedNumberField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RETableViewManager/RETableViewManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/REValidation/REValidation.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Result/Result.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects/Aspects.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HexColors/HexColors.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/REFormattedNumberField/REFormattedNumberField.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RETableViewManager/RETableViewManager.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/REValidation/REValidation.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Result/Result.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/pop/pop.framework"
+fi
