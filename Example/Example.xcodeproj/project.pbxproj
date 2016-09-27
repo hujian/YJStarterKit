@@ -27,6 +27,7 @@
 		BF8C50BE1D9A552900052FDD /* no-data-page-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */; };
 		BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50C01D9A7BC900052FDD /* YJCircleView.m */; };
 		BF8C50C41D9A892100052FDD /* TestProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50C31D9A892100052FDD /* TestProgressViewController.m */; };
+		BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		BF8C50C21D9A892100052FDD /* TestProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProgressViewController.h; sourceTree = "<group>"; };
 		BF8C50C31D9A892100052FDD /* TestProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProgressViewController.m; sourceTree = "<group>"; };
 		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
+		BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YJStarterKit.h"; sourceTree = "<group>"; };
+		BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YJStarterKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 				BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */,
 				BF8C509D1D98D04C00052FDD /* NSDate+YJStarterKit.h */,
 				BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */,
+				BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */,
+				BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
 				BF8C50C41D9A892100052FDD /* TestProgressViewController.m in Sources */,
+				BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,

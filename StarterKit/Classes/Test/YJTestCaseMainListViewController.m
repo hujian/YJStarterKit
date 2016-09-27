@@ -1,6 +1,7 @@
 #import "YJTestCaseMainListViewController.h"
-#import "YJTableViewController.h"
 #import "ReactiveCocoa.h"
+#import "YJTableViewController.h"
+#import "TestProgressViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -24,6 +25,14 @@
             YJTableViewController* vc = [[YJTableViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }];
+        
+        [self addTestCase:@"进度条" toSection:section block:^() {
+            @strongify(self);
+            
+            TestProgressViewController* vc = [[TestProgressViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+
     }
     return self;
 }

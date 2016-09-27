@@ -1,5 +1,6 @@
 #import "YJTestCaseViewController.h"
 #import "UIView+YJStarterKit.h"
+#import "UITextView+YJStarterKit.h"
 
 @interface YJTestCaseViewController ()
 
@@ -19,6 +20,7 @@
         [self.view addSubview:self.outputView];
     }
     self.outputView.text = [[self.outputView.text stringByAppendingString:info] stringByAppendingString:@"\n"];
+    [self.outputView scrollToBottom];
 }
 
 @end
