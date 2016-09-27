@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F9B9351146A6BC0F6AB22CF /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE9A02D84D3DBFD67B78FD9 /* Pods_Example.framework */; };
+		1FA88D18AE89778CF08BDF0C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FDFAF24466F89E6495740C /* libPods-Example.a */; };
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
@@ -26,11 +26,12 @@
 		BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50BB1D9A513D00052FDD /* YJTestCaseMainListViewController.m */; };
 		BF8C50BE1D9A552900052FDD /* no-data-page-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */; };
 		BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50C01D9A7BC900052FDD /* YJCircleView.m */; };
+		BF8C50C41D9A892100052FDD /* TestProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50C31D9A892100052FDD /* TestProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33FDFAF24466F89E6495740C /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6B4F0B81B1AE5BD46CDBD9 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9FE9A02D84D3DBFD67B78FD9 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B28026FC59E7236005AAAC /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		BF2C22E81D97B12F0050CACC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +67,8 @@
 		BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-data-page-icon@2x.png"; sourceTree = "<group>"; };
 		BF8C50BF1D9A7BC900052FDD /* YJCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCircleView.h; sourceTree = "<group>"; };
 		BF8C50C01D9A7BC900052FDD /* YJCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCircleView.m; sourceTree = "<group>"; };
+		BF8C50C21D9A892100052FDD /* TestProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProgressViewController.h; sourceTree = "<group>"; };
+		BF8C50C31D9A892100052FDD /* TestProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProgressViewController.m; sourceTree = "<group>"; };
 		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F9B9351146A6BC0F6AB22CF /* Pods_Example.framework in Frameworks */,
+				1FA88D18AE89778CF08BDF0C /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +87,7 @@
 		B4507947F2210E5EE2FE50EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE9A02D84D3DBFD67B78FD9 /* Pods_Example.framework */,
+				33FDFAF24466F89E6495740C /* libPods-Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +220,8 @@
 				BF8C50B71D9A4D6C00052FDD /* YJTestCaseViewController.m */,
 				BF8C50BA1D9A513D00052FDD /* YJTestCaseMainListViewController.h */,
 				BF8C50BB1D9A513D00052FDD /* YJTestCaseMainListViewController.m */,
+				BF8C50C21D9A892100052FDD /* TestProgressViewController.h */,
+				BF8C50C31D9A892100052FDD /* TestProgressViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
+				BF8C50C41D9A892100052FDD /* TestProgressViewController.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,

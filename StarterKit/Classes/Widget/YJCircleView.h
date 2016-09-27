@@ -1,5 +1,5 @@
 /*
- * @brief:  水波界面
+ * @brief:  圆形进度条
  * @author: Hj
  * @date:   2016-05-22
  */
