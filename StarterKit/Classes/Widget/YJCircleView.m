@@ -25,20 +25,20 @@
 - (RACSignal *)setProgress:(CGFloat)progress duration:(CGFloat)duration {
     if (duration > 0) {
         @weakify(self);
-        return [RACSignal createSignal:^RACDisposable* (id<RACSubscriber> subscriber) {
-            @strongify(self);
-            POPBasicAnimation *strokeAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
-            strokeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-            strokeAnimation.toValue = @(progress);
-            strokeAnimation.duration = duration;
-            strokeAnimation.removedOnCompletion = NO;
+        POPBasicAnimation *strokeAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPShapeLayerStrokeEnd];
+        strokeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        strokeAnimation.toValue = @(progress);
+        strokeAnimation.duration = duration;
+        strokeAnimation.removedOnCompletion = NO;
+        [self.circleLayer pop_addAnimation:strokeAnimation forKey:@"layerStrokeAnimation"];
+        RACSignal* signal = [RACSignal createSignal:^RACDisposable* (id<RACSubscriber> subscriber) {
             strokeAnimation.animationDidApplyBlock = ^(POPAnimation *anim) {
                 @strongify(self);
                 [subscriber sendNext:@(self.progress)];
             };
-            [self.circleLayer pop_addAnimation:strokeAnimation forKey:@"layerStrokeAnimation"];
             return nil;
         }];
+        return signal;
     } else {
         self.progress = progress;
         return nil;
