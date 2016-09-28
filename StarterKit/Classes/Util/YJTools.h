@@ -29,6 +29,9 @@
 // 设备名称，比如xx' iPhone这种
 + (NSString *)deviceName;
 
+// 利用dispatch批量间隔调用block
++ (void)repeat:(NSInteger)count Call:(void(^)(NSInteger index))block interval:(CGFloat)interval;
+
 /*
  电话号码
  移动  134［0-8］ 135 136 137 138 139 150 151 152 158 159 182 183 184 157 187 188 147 178

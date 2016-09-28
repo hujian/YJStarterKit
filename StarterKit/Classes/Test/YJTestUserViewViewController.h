@@ -4,7 +4,6 @@
  * @date:   2016-09-23
  */
 
-
 #import "YJTestCaseViewController.h"
 
 @interface YJTestUserViewViewController : YJTestCaseViewController

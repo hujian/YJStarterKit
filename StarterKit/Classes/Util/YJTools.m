@@ -55,4 +55,14 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
++ (void)repeat:(NSInteger)count Call:(void(^)(NSInteger index))block interval:(CGFloat)interval {
+    for (NSInteger i=0; i<count; i++) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(interval * i * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (block) {
+                block(i);
+            }
+        });
+    }
+}
+
 @end
