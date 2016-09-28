@@ -4,6 +4,7 @@
 #import "YJTestProgressViewController.h"
 #import "YJTestSplahViewController.h"
 #import "YJTestButtonViewController.h"
+#import "YJWebViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -46,6 +47,14 @@
             @strongify(self);
             
             YJTestButtonViewController* vc = [[YJTestButtonViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"web页面" toSection:section block:^() {
+            @strongify(self);
+            
+            YJWebViewController* vc = [[YJWebViewController alloc] initWithNibName:nil bundle:nil];
+            vc.url = @"http://m.163.com";
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }
