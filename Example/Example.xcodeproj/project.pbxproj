@@ -31,6 +31,7 @@
 		BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2301D9B80F300788F51 /* YJButton.m */; };
 		BFF3E2341D9B825E00788F51 /* YJTestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2331D9B825E00788F51 /* YJTestButtonViewController.m */; };
 		BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2361D9B853400788F51 /* YJWebViewController.m */; };
+		BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */; };
 		BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		BFF3E2331D9B825E00788F51 /* YJTestButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestButtonViewController.m; sourceTree = "<group>"; };
 		BFF3E2351D9B853400788F51 /* YJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJWebViewController.h; sourceTree = "<group>"; };
 		BFF3E2361D9B853400788F51 /* YJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJWebViewController.m; sourceTree = "<group>"; };
+		BFF3E23B1D9B8F6C00788F51 /* YJXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJXibView.h; sourceTree = "<group>"; };
+		BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJXibView.m; sourceTree = "<group>"; };
 		BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YJStarterKit.h"; sourceTree = "<group>"; };
 		BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YJStarterKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +198,8 @@
 			children = (
 				BF8C50BF1D9A7BC900052FDD /* YJCircleView.h */,
 				BF8C50C01D9A7BC900052FDD /* YJCircleView.m */,
+				BFF3E23B1D9B8F6C00788F51 /* YJXibView.h */,
+				BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */,
 				BFF3E22F1D9B80F300788F51 /* YJButton.h */,
 				BFF3E2301D9B80F300788F51 /* YJButton.m */,
 				BF62F0F41D97B343004D3C73 /* YJSplashView.h */,
@@ -394,6 +399,7 @@
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
 				BF8C50C41D9A892100052FDD /* YJTestProgressViewController.m in Sources */,
+				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
 				BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */,
 				BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
