@@ -23,4 +23,13 @@
     [self.outputView scrollToBottom];
 }
 
+- (YJButton*)testButton:(NSString*)title {
+    YJButton* button = [YJButton button];
+    button.backgroundColor = [UIColor blueColor];
+    [button setTitle:title forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 80, 30);
+    [self.view addSubview:button];
+    return button;
+}
+
 @end

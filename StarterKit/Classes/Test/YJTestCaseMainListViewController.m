@@ -5,6 +5,7 @@
 #import "YJTestSplahViewController.h"
 #import "YJTestButtonViewController.h"
 #import "YJWebViewController.h"
+#import "YJTestUserViewViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -55,6 +56,13 @@
             
             YJWebViewController* vc = [[YJWebViewController alloc] initWithNibName:nil bundle:nil];
             vc.url = @"http://m.163.com";
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"用户头像" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestUserViewViewController* vc = [[YJTestUserViewViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }

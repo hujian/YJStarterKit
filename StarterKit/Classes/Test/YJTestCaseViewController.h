@@ -5,9 +5,12 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "YJButton.h"
 
 @interface YJTestCaseViewController : UIViewController
 
 - (void)printDebugInfo:(NSString*)info;
+
+- (YJButton*)testButton:(NSString*)title;
 
 @end

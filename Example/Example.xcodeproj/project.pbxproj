@@ -32,6 +32,9 @@
 		BFF3E2341D9B825E00788F51 /* YJTestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2331D9B825E00788F51 /* YJTestButtonViewController.m */; };
 		BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2361D9B853400788F51 /* YJWebViewController.m */; };
 		BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */; };
+		BFF3E2401D9B936600788F51 /* YJUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E23F1D9B936600788F51 /* YJUserView.m */; };
+		BFF3E2431D9B997500788F51 /* YJTestUserViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2421D9B997500788F51 /* YJTestUserViewViewController.m */; };
+		BFF3E2451D9B9D4500788F51 /* user-view-default.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E2441D9B9D4500788F51 /* user-view-default.png */; };
 		BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,11 @@
 		BFF3E2361D9B853400788F51 /* YJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJWebViewController.m; sourceTree = "<group>"; };
 		BFF3E23B1D9B8F6C00788F51 /* YJXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJXibView.h; sourceTree = "<group>"; };
 		BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJXibView.m; sourceTree = "<group>"; };
+		BFF3E23E1D9B936600788F51 /* YJUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJUserView.h; sourceTree = "<group>"; };
+		BFF3E23F1D9B936600788F51 /* YJUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJUserView.m; sourceTree = "<group>"; };
+		BFF3E2411D9B997500788F51 /* YJTestUserViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestUserViewViewController.h; sourceTree = "<group>"; };
+		BFF3E2421D9B997500788F51 /* YJTestUserViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestUserViewViewController.m; sourceTree = "<group>"; };
+		BFF3E2441D9B9D4500788F51 /* user-view-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-view-default.png"; sourceTree = "<group>"; };
 		BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YJStarterKit.h"; sourceTree = "<group>"; };
 		BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YJStarterKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +204,8 @@
 		BF62F0F31D97B343004D3C73 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				BFF3E23E1D9B936600788F51 /* YJUserView.h */,
+				BFF3E23F1D9B936600788F51 /* YJUserView.m */,
 				BF8C50BF1D9A7BC900052FDD /* YJCircleView.h */,
 				BF8C50C01D9A7BC900052FDD /* YJCircleView.m */,
 				BFF3E23B1D9B8F6C00788F51 /* YJXibView.h */,
@@ -232,6 +242,7 @@
 		BF8C50B01D9A4C0100052FDD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BFF3E2441D9B9D4500788F51 /* user-view-default.png */,
 				BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */,
 			);
 			path = Assets;
@@ -252,6 +263,8 @@
 				BFB03E911D9B27D000F18233 /* YJTestSplahViewController.m */,
 				BFF3E2321D9B825E00788F51 /* YJTestButtonViewController.h */,
 				BFF3E2331D9B825E00788F51 /* YJTestButtonViewController.m */,
+				BFF3E2411D9B997500788F51 /* YJTestUserViewViewController.h */,
+				BFF3E2421D9B997500788F51 /* YJTestUserViewViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -326,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */,
+				BFF3E2451D9B9D4500788F51 /* user-view-default.png in Resources */,
 				BF8C50BE1D9A552900052FDD /* no-data-page-icon@2x.png in Resources */,
 				BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */,
 			);
@@ -401,11 +415,13 @@
 				BF8C50C41D9A892100052FDD /* YJTestProgressViewController.m in Sources */,
 				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
 				BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */,
+				BFF3E2401D9B936600788F51 /* YJUserView.m in Sources */,
 				BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,
 				BFF3E2341D9B825E00788F51 /* YJTestButtonViewController.m in Sources */,
+				BFF3E2431D9B997500788F51 /* YJTestUserViewViewController.m in Sources */,
 				BF8C50B81D9A4D6C00052FDD /* YJTestCaseListViewController.m in Sources */,
 				BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */,
 			);
