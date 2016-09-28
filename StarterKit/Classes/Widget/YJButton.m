@@ -1,5 +1,7 @@
 #import "YJButton.h"
 #import <POP/POP.h>
+#import "ReactiveCocoa.h"
+#import "YJLogger.h"
 
 @interface YJButton ()
 
@@ -55,13 +57,17 @@
 }
 
 - (void)shake {
+    [self.layer pop_removeAllAnimations];
+    self.enabled = NO;
     POPSpringAnimation *positionAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
     positionAnimation.velocity = @2000;
     positionAnimation.springBounciness = 20;
+    @weakify(self);
     [positionAnimation setCompletionBlock:^(POPAnimation *animation, BOOL finished) {
-        self.userInteractionEnabled = YES;
+        @strongify(self);
+        self.enabled = YES;
     }];
-    [self.layer pop_addAnimation:positionAnimation forKey:@"positionAnimation"];
+    [self.layer pop_addAnimation:positionAnimation forKey:@"shakeAnimation"];
 }
 
 - (void)startLoading:(UIActivityIndicatorViewStyle)style {
@@ -90,8 +96,10 @@
 - (void)jump {
     POPBasicAnimation *jumpHigh = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
     jumpHigh.toValue = @(self.center.y - 10);
-    jumpHigh.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];;
+    jumpHigh.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    @weakify(self);
     jumpHigh.completionBlock = ^(POPAnimation *animation, BOOL finished) {
+        @strongify(self);
         POPBasicAnimation *jumpHigh = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerPositionY];
         jumpHigh.toValue = @(self.center.y - 10);
         jumpHigh.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];;
@@ -101,6 +109,10 @@
 }
 
 - (void)stopJump {
+}
+
+- (void)dealloc {
+    LogVerbose(@"YJButton dealloc");
 }
 
 @end

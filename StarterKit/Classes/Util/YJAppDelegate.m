@@ -2,11 +2,14 @@
 #import "YJSplashView.h"
 #import "YJLogger.h"
 #import "YJTestCaseMainListViewController.h"
+#import "YJTools.h"
 
 @implementation YJAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [YJTools initRandomTimeSeed];
+    
     // 日志
     [self setupLog];
   

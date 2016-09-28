@@ -6,6 +6,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HexColors.h"
+#import "UIColor+Wonderful.h"
 
 #undef	RGB
 #define RGB(R,G,B)		[UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
@@ -20,5 +21,7 @@
 #define HEX_RGBA(V, A)	[UIColor hx_colorWithHexString:V alpha:A]
 
 @interface UIColor (YJStarterKit)
+
++ (UIColor *)randomColor;
 
 @end

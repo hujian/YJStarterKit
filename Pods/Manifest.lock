@@ -41,6 +41,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - Wonderful (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.5.0)
   - RETableViewManager
   - SDWebImage
+  - Wonderful
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -65,7 +67,6 @@ SPEC CHECKSUMS:
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
 
-PODFILE CHECKSUM: e468e93b88e8dcd1f200030e1ac7e3ac3faa89fe
-
-COCOAPODS: 1.0.1
+COCOAPODS: 0.38.2

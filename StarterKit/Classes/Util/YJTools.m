@@ -65,4 +65,8 @@
     }
 }
 
++ (void)initRandomTimeSeed {
+    srand((unsigned int)time(NULL));
+}
+
 @end

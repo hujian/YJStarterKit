@@ -1,6 +1,7 @@
 #import "YJTestCaseViewController.h"
 #import "UIView+YJStarterKit.h"
 #import "UITextView+YJStarterKit.h"
+#import "UIColor+YJStarterKit.h"
 
 @interface YJTestCaseViewController ()
 
@@ -25,8 +26,9 @@
 
 - (YJButton*)testButton:(NSString*)title {
     YJButton* button = [YJButton button];
-    button.backgroundColor = [UIColor blueColor];
+    button.backgroundColor = [UIColor randomColor];
     [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[button.backgroundColor reverseColor] forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 80, 30);
     [self.view addSubview:button];
     return button;

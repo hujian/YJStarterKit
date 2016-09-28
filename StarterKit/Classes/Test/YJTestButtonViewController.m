@@ -11,15 +11,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    YJButton* button = [YJButton button];
-    button.backgroundColor = [UIColor blueColor];
-    [button setTitle:@"普通" forState:UIControlStateNormal];
+    YJButton* button = [self testButton:@"普通"];
     button.frame = CGRectMake(30, 80, 100, 60);
     [self.view addSubview:button];
     
-    button = [YJButton button];
-    button.backgroundColor = [UIColor redColor];
-    [button setTitle:@"加载" forState:UIControlStateNormal];
+    button = [self testButton:@"加载"];
     button.frame = CGRectMake(160, 80, 100, 60);
     [self.view addSubview:button];
     [[button rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(YJButton* b) {
@@ -29,9 +25,7 @@
         });
     }];
     
-    button = [YJButton button];
-    button.backgroundColor = [UIColor greenColor];
-    [button setTitle:@"摇动" forState:UIControlStateNormal];
+    button = [self testButton:@"摇动"];
     button.frame = CGRectMake(290, 80, 100, 60);
     [self.view addSubview:button];
     [[button rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(YJButton* b) {

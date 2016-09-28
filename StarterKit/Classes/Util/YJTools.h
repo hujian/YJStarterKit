@@ -32,6 +32,9 @@
 // 利用dispatch批量间隔调用block
 + (void)repeat:(NSInteger)count Call:(void(^)(NSInteger index))block interval:(CGFloat)interval;
 
+// 设置随机算法的时间种子
++ (void)initRandomTimeSeed;
+
 /*
  电话号码
  移动  134［0-8］ 135 136 137 138 139 150 151 152 158 159 182 183 184 157 187 188 147 178
