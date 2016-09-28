@@ -3,6 +3,7 @@
 #import "YJTableViewController.h"
 #import "YJTestProgressViewController.h"
 #import "YJTestSplahViewController.h"
+#import "YJTestButtonViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -41,6 +42,12 @@
             [self.navigationController pushViewController:vc animated:YES];
         }];
 
+        [self addTestCase:@"按钮" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestButtonViewController* vc = [[YJTestButtonViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
     }
     return self;
 }
