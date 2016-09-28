@@ -16,4 +16,8 @@
 // 在view的本地坐标系里面的中点
 @property (nonatomic, assign, readonly) CGPoint centerInLocal;
 
+// 外发光, thick = 0 ~ 1, 越大光圈越大
+- (void) addGlow:(UIColor *)color isCircle:(BOOL)isCircle cornerRadius:(CGFloat)cornerRadius thick:(CGFloat)thick;
+- (void) removeGlow;
+
 @end

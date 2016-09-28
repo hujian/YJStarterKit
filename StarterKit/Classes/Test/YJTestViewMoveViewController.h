@@ -1,5 +1,5 @@
 /*
- * @brief:  测试view的运动动画
+ * @brief:  测试运动类动画
  * @author: Hj
  * @date:   2016-09-23
  */

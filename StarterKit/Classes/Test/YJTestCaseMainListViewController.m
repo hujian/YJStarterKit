@@ -7,6 +7,7 @@
 #import "YJWebViewController.h"
 #import "YJTestUserViewViewController.h"
 #import "YJTestViewMoveViewController.h"
+#import "TestYJEffectViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -74,8 +75,13 @@
         
         [self addTestCase:@"动作类动画" toSection:section block:^() {
             @strongify(self);
-            
             YJTestViewMoveViewController* vc = [[YJTestViewMoveViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"光影类动画" toSection:section block:^() {
+            @strongify(self);
+            TestYJEffectViewController* vc = [[TestYJEffectViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }];
     }
