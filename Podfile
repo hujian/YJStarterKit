@@ -14,7 +14,6 @@ target 'Example' do
     pod 'HexColors'
     pod 'DZNEmptyDataSet'
     pod 'ReactiveCocoa', '2.5.0'
-    pod 'Wonderful'
     pod 'ShareSDK3'
     pod 'MOBFoundation'
     pod 'ShareSDK3/ShareSDKPlatforms/QQ'

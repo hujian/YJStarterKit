@@ -15,13 +15,16 @@
 // shareSDKAppID(必须)
 //    请去到http://mob.com/login 登录后台进行应用注册
 // weChatID / weChatToken
-//    去腾讯开放平台申请
+//    去微信开放平台申请https://open.weixin.qq.com/
+// QQID / QQToken
+//    去腾讯开放平台申请http://open.qq.com/
+
 + (void)setup:(NSString*)shareSDKAppID
      weChatID:(NSString*)weChatID
   weChatToken:(NSString*)weChatToken
          QQID:(NSString*)QQID
       QQToken:(NSString*)QQToken
-     weixinID:(NSString*)weixinID
-  weixinToken:(NSString*)weixinToken;
+     weiboID:(NSString*)weiboID
+  weiboToken:(NSString*)weiboToken;
 
 @end
