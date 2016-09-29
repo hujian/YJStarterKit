@@ -8,10 +8,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [YJTools initRandomTimeSeed];
-    
     // 日志
     [self setupLog];
+    
+    // 随机种子
+    [YJTools initRandomTimeSeed];
   
     // 页面入口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

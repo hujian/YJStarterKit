@@ -12,6 +12,7 @@
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
 		BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F91D97B12F0050CACC /* LaunchScreen.storyboard */; };
+		BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39FB6B1D9D4F9B00775205 /* NSObject+YJStarterKit.m */; };
 		BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0F51D97B343004D3C73 /* YJSplashView.m */; };
 		BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FD1D97B3CE004D3C73 /* YJTools.m */; };
 		BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FE1D97B3CE004D3C73 /* YJAppDelegate.m */; };
@@ -53,6 +54,8 @@
 		BF2C22F71D97B12F0050CACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2C22FA1D97B12F0050CACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2C22FC1D97B12F0050CACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF39FB6A1D9D4F9B00775205 /* NSObject+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJStarterKit.h"; sourceTree = "<group>"; };
+		BF39FB6B1D9D4F9B00775205 /* NSObject+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF62F0F41D97B343004D3C73 /* YJSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSplashView.h; sourceTree = "<group>"; };
 		BF62F0F51D97B343004D3C73 /* YJSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSplashView.m; sourceTree = "<group>"; };
 		BF62F0FD1D97B3CE004D3C73 /* YJTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */,
 				BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */,
 				BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */,
+				BF39FB6A1D9D4F9B00775205 /* NSObject+YJStarterKit.h */,
+				BF39FB6B1D9D4F9B00775205 /* NSObject+YJStarterKit.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */,
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
+				BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
 				BF8C50C41D9A892100052FDD /* YJTestProgressViewController.m in Sources */,
 				BFF3E2491D9BA73E00788F51 /* YJViewMoveAnimation.m in Sources */,

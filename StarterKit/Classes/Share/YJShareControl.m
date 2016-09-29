@@ -19,16 +19,20 @@
    weiboToken:(NSString*)weiboToken {
     
     NSMutableArray* platforms = [NSMutableArray array];
+    if (weChatID && weChatToken) {
+        [platforms addObject:@(SSDKPlatformTypeWechat)];
+    }
+    if (QQID && QQToken) {
+        [platforms addObject:@(SSDKPlatformTypeQQ)];
+    }
+    if (weiboID && weiboToken) {
+        [platforms addObject:@(SSDKPlatformTypeSinaWeibo)];
+    }
     
     [ShareSDK registerApp:shareSDKAppID
-          activePlatforms:@[
-                            @(SSDKPlatformTypeSinaWeibo),
-                            @(SSDKPlatformTypeWechat),
-                            @(SSDKPlatformTypeQQ)]
-                 onImport:^(SSDKPlatformType platformType)
-     {
-         switch (platformType)
-         {
+          activePlatforms:platforms
+                 onImport:^(SSDKPlatformType platformType) {
+         switch (platformType) {
              case SSDKPlatformTypeWechat:
                  [ShareSDKConnector connectWeChat:[WXApi class]];
                  break;
@@ -42,25 +46,21 @@
                  break;
          }
      }
-          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
-     {
-         
-         switch (platformType)
-         {
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+         switch (platformType) {
              case SSDKPlatformTypeSinaWeibo:
-                 //设置新浪微博应用信息,其中authType设置为使用SSO＋Web形式授权
-                 [appInfo SSDKSetupSinaWeiboByAppKey:Sina_AppKey
-                                           appSecret:Sina_AppSecret
-                                         redirectUri:Sina_AppUri
+                 [appInfo SSDKSetupSinaWeiboByAppKey:weiboID
+                                           appSecret:weiboToken
+                                         redirectUri:nil
                                             authType:SSDKAuthTypeBoth];
                  break;
              case SSDKPlatformTypeWechat:
-                 [appInfo SSDKSetupWeChatByAppId:WeChat_AppID
-                                       appSecret:WeChat_AppSecret];
+                 [appInfo SSDKSetupWeChatByAppId:weChatID
+                                       appSecret:weChatToken];
                  break;
              case SSDKPlatformTypeQQ:
-                 [appInfo SSDKSetupQQByAppId:QZone_AppKey
-                                      appKey:QZone_AppSecret
+                 [appInfo SSDKSetupQQByAppId:QQID
+                                      appKey:QQToken
                                     authType:SSDKAuthTypeBoth];
                  break;
              default:

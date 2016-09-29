@@ -1,5 +1,6 @@
 #import "YJTools.h"
 #import <AdSupport/AdSupport.h>
+#import "YJLogger.h"
 
 @implementation YJTools
 
@@ -67,6 +68,7 @@
 
 + (void)initRandomTimeSeed {
     srand((unsigned int)time(NULL));
+    LogVerbose(@"system | call srand to seed rand");
 }
 
 @end

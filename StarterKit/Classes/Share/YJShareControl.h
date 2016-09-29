@@ -19,6 +19,7 @@
 // QQID / QQToken
 //    去腾讯开放平台申请http://open.qq.com/
 
+// 必须在AppDelegate的launch函数中调用该方法
 + (void)setup:(NSString*)shareSDKAppID
      weChatID:(NSString*)weChatID
   weChatToken:(NSString*)weChatToken
