@@ -25,6 +25,7 @@ PODS:
     - CocoaLumberjack/Default
   - DZNEmptyDataSet (1.8.1)
   - HexColors (4.0.0)
+  - MOBFoundation (2.0.11)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -41,6 +42,12 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - ShareSDK3 (3.4.2):
+    - ShareSDK3/ShareSDK (= 3.4.2)
+  - ShareSDK3/ShareSDK (3.4.2)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.4.2)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.4.2)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.4.2)
   - Wonderful (1.2.0)
 
 DEPENDENCIES:
@@ -49,10 +56,15 @@ DEPENDENCIES:
   - CocoaLumberjack (= 2.3.0)
   - DZNEmptyDataSet
   - HexColors
+  - MOBFoundation
   - pop
   - ReactiveCocoa (= 2.5.0)
   - RETableViewManager
   - SDWebImage
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
   - Wonderful
 
 SPEC CHECKSUMS:
@@ -61,12 +73,16 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
+  MOBFoundation: e213065e65eebd8146ab29d10a8445dc8f385091
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  ShareSDK3: 2fa975dd22937fc7de3f6b5d0c41a18ba0dd1661
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 47c4cd850d45e7ab82208058e18a4a3bc862c614
+
+COCOAPODS: 1.0.1

@@ -38,6 +38,7 @@
 		BFF3E2491D9BA73E00788F51 /* YJViewMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2481D9BA73E00788F51 /* YJViewMoveAnimation.m */; };
 		BFF3E24C1D9BA96200788F51 /* YJTestViewMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E24B1D9BA96200788F51 /* YJTestViewMoveViewController.m */; };
 		BFF3E24F1D9BDBBE00788F51 /* TestYJEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E24E1D9BDBBE00788F51 /* TestYJEffectViewController.m */; };
+		BFF3E2561D9CE53A00788F51 /* YJShareControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2551D9CE53A00788F51 /* YJShareControl.m */; };
 		BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,8 @@
 		BFF3E24B1D9BA96200788F51 /* YJTestViewMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestViewMoveViewController.m; sourceTree = "<group>"; };
 		BFF3E24D1D9BDBBE00788F51 /* TestYJEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestYJEffectViewController.h; sourceTree = "<group>"; };
 		BFF3E24E1D9BDBBE00788F51 /* TestYJEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestYJEffectViewController.m; sourceTree = "<group>"; };
+		BFF3E2541D9CE53A00788F51 /* YJShareControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJShareControl.h; sourceTree = "<group>"; };
+		BFF3E2551D9CE53A00788F51 /* YJShareControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJShareControl.m; sourceTree = "<group>"; };
 		BFFA7B0F1D9AD4B6002A77C7 /* UITextView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YJStarterKit.h"; sourceTree = "<group>"; };
 		BFFA7B101D9AD4B6002A77C7 /* UITextView+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YJStarterKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8C50B31D9A4D6C00052FDD /* Test */,
+				BFF3E2531D9CE4D200788F51 /* Share */,
 				BFF3E2461D9BA07600788F51 /* Animation */,
 				BF62F0EA1D97B343004D3C73 /* Network */,
 				BF8C50931D98C41E00052FDD /* Category */,
@@ -290,6 +294,15 @@
 				BFF3E2481D9BA73E00788F51 /* YJViewMoveAnimation.m */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		BFF3E2531D9CE4D200788F51 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E2541D9CE53A00788F51 /* YJShareControl.h */,
+				BFF3E2551D9CE53A00788F51 /* YJShareControl.m */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 		E16964CB7ECBFD0DD12DD8CF /* Pods */ = {
@@ -449,6 +462,7 @@
 				BFF3E2341D9B825E00788F51 /* YJTestButtonViewController.m in Sources */,
 				BFF3E2431D9B997500788F51 /* YJTestUserViewViewController.m in Sources */,
 				BF8C50B81D9A4D6C00052FDD /* YJTestCaseListViewController.m in Sources */,
+				BFF3E2561D9CE53A00788F51 /* YJShareControl.m in Sources */,
 				BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

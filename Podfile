@@ -15,6 +15,11 @@ target 'Example' do
     pod 'DZNEmptyDataSet'
     pod 'ReactiveCocoa', '2.5.0'
     pod 'Wonderful'
+    pod 'ShareSDK3'
+    pod 'MOBFoundation'
+    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

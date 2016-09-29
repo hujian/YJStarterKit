@@ -20,11 +20,7 @@
     if (self) {
         @weakify(self);
         
-        YJTestCaseSection* section = [self addSection:@"工具箱"];
-        [self addTestCase:@"待定" toSection:section block:^() {
-        }];
-        
-        section = [self addSection:@"基础UI控件"];
+        YJTestCaseSection* section = [self addSection:@"基础UI控件"];
         
         [self addTestCase:@"按钮" toSection:section block:^() {
             @strongify(self);
@@ -83,6 +79,15 @@
             @strongify(self);
             TestYJEffectViewController* vc = [[TestYJEffectViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        section = [self addSection:@"工具箱"];
+        [self addTestCase:@"待定" toSection:section block:^() {
+        }];
+        
+        section = [self addSection:@"第三方功能"];
+        
+        [self addTestCase:@"社会化登录分享" toSection:section block:^() {
         }];
     }
     return self;
