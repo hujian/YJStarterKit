@@ -173,6 +173,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BF3CFB841D9D556200DB7DF9 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		BF3CFB851D9D55C900DB7DF9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BF3CFB861D9D55D600DB7DF9 /* Login */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BF3CFB861D9D55D600DB7DF9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		BF62F0E71D97B343004D3C73 /* StarterKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +208,9 @@
 		BF62F0E91D97B343004D3C73 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF3CFB851D9D55C900DB7DF9 /* Application */,
 				BF8C50B31D9A4D6C00052FDD /* Test */,
+				BF3CFB841D9D556200DB7DF9 /* Pay */,
 				BFF3E2531D9CE4D200788F51 /* Share */,
 				BFF3E2461D9BA07600788F51 /* Animation */,
 				BF62F0EA1D97B343004D3C73 /* Network */,
