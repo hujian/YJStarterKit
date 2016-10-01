@@ -10,6 +10,8 @@
 		1FA88D18AE89778CF08BDF0C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FDFAF24466F89E6495740C /* libPods-Example.a */; };
 		BF17C9521D9F9E0200CD566C /* YJMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */; };
 		BF17C9551D9FA16000CD566C /* YJTestMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */; };
+		BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9571D9FAAF300CD566C /* YJLabel.m */; };
+		BF17C95B1D9FAB8700CD566C /* YJTestLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C95A1D9FAB8700CD566C /* YJTestLabelViewController.m */; };
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
@@ -53,6 +55,10 @@
 		BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMarqueeView.m; sourceTree = "<group>"; };
 		BF17C9531D9FA16000CD566C /* YJTestMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestMarqueeViewController.h; sourceTree = "<group>"; };
 		BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestMarqueeViewController.m; sourceTree = "<group>"; };
+		BF17C9561D9FAAF300CD566C /* YJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLabel.h; sourceTree = "<group>"; };
+		BF17C9571D9FAAF300CD566C /* YJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJLabel.m; sourceTree = "<group>"; };
+		BF17C9591D9FAB8700CD566C /* YJTestLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestLabelViewController.h; sourceTree = "<group>"; };
+		BF17C95A1D9FAB8700CD566C /* YJTestLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestLabelViewController.m; sourceTree = "<group>"; };
 		BF2C22E81D97B12F0050CACC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF2C22EE1D97B12F0050CACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 				BF8C50A11D990BE000052FDD /* YJTableViewController.m */,
 				BF17C9501D9F9E0200CD566C /* YJMarqueeView.h */,
 				BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */,
+				BF17C9561D9FAAF300CD566C /* YJLabel.h */,
+				BF17C9571D9FAAF300CD566C /* YJLabel.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 				BFF3E24E1D9BDBBE00788F51 /* TestYJEffectViewController.m */,
 				BF17C9531D9FA16000CD566C /* YJTestMarqueeViewController.h */,
 				BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */,
+				BF17C9591D9FAB8700CD566C /* YJTestLabelViewController.h */,
+				BF17C95A1D9FAB8700CD566C /* YJTestLabelViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -482,12 +492,14 @@
 				BFF3E24C1D9BA96200788F51 /* YJTestViewMoveViewController.m in Sources */,
 				BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */,
 				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
+				BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */,
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
 				BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */,
 				BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */,
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
+				BF17C95B1D9FAB8700CD566C /* YJTestLabelViewController.m in Sources */,
 				BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
 				BF8C50C41D9A892100052FDD /* YJTestProgressViewController.m in Sources */,
