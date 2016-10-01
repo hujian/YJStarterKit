@@ -8,6 +8,7 @@
 #import "YJTestUserViewViewController.h"
 #import "YJTestViewMoveViewController.h"
 #import "TestYJEffectViewController.h"
+#import "YJTestMarqueeViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -30,6 +31,13 @@
         }];
         
         [self addTestCase:@"进度条" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestProgressViewController* vc = [[YJTestProgressViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"label" toSection:section block:^() {
             @strongify(self);
             
             YJTestProgressViewController* vc = [[YJTestProgressViewController alloc] initWithNibName:nil bundle:nil];
@@ -64,6 +72,13 @@
             @strongify(self);
             
             YJTestUserViewViewController* vc = [[YJTestUserViewViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"跑马灯" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestMarqueeViewController* vc = [[YJTestMarqueeViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }];
         

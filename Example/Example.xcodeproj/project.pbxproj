@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1FA88D18AE89778CF08BDF0C /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FDFAF24466F89E6495740C /* libPods-Example.a */; };
+		BF17C9521D9F9E0200CD566C /* YJMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */; };
+		BF17C9551D9FA16000CD566C /* YJTestMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */; };
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
@@ -47,6 +49,10 @@
 		33FDFAF24466F89E6495740C /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E6B4F0B81B1AE5BD46CDBD9 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B28026FC59E7236005AAAC /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		BF17C9501D9F9E0200CD566C /* YJMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMarqueeView.h; sourceTree = "<group>"; };
+		BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMarqueeView.m; sourceTree = "<group>"; };
+		BF17C9531D9FA16000CD566C /* YJTestMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestMarqueeViewController.h; sourceTree = "<group>"; };
+		BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestMarqueeViewController.m; sourceTree = "<group>"; };
 		BF2C22E81D97B12F0050CACC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF2C22EE1D97B12F0050CACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 				BFF3E2361D9B853400788F51 /* YJWebViewController.m */,
 				BF8C50A01D990BE000052FDD /* YJTableViewController.h */,
 				BF8C50A11D990BE000052FDD /* YJTableViewController.m */,
+				BF17C9501D9F9E0200CD566C /* YJMarqueeView.h */,
+				BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -312,6 +320,8 @@
 				BFF3E24B1D9BA96200788F51 /* YJTestViewMoveViewController.m */,
 				BFF3E24D1D9BDBBE00788F51 /* TestYJEffectViewController.h */,
 				BFF3E24E1D9BDBBE00788F51 /* TestYJEffectViewController.m */,
+				BF17C9531D9FA16000CD566C /* YJTestMarqueeViewController.h */,
+				BF17C9541D9FA16000CD566C /* YJTestMarqueeViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -467,6 +477,7 @@
 			files = (
 				BFB03E921D9B27D000F18233 /* YJTestSplahViewController.m in Sources */,
 				BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */,
+				BF17C9521D9F9E0200CD566C /* YJMarqueeView.m in Sources */,
 				BF8C50B91D9A4D6C00052FDD /* YJTestCaseViewController.m in Sources */,
 				BFF3E24C1D9BA96200788F51 /* YJTestViewMoveViewController.m in Sources */,
 				BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */,
@@ -480,6 +491,7 @@
 				BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
 				BF8C50C41D9A892100052FDD /* YJTestProgressViewController.m in Sources */,
+				BF17C9551D9FA16000CD566C /* YJTestMarqueeViewController.m in Sources */,
 				BFF3E2491D9BA73E00788F51 /* YJViewMoveAnimation.m in Sources */,
 				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
 				BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */,
