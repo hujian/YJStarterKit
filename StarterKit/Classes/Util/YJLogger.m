@@ -1,5 +1,6 @@
 #import "YJLogger.h"
 #import "Aspects.h"
+#import "XCDLumberjackNSLogger.h"
 
 @interface MyCustomFormatter : NSObject <DDLogFormatter>
 
@@ -33,9 +34,15 @@
 }
 
 + (void)setup {
+    // NSLogger的输出
+    [XCDLumberjackNSLogger bindToBonjourServiceNameUserDefaultsKey:@"NSLoggerBonjourServiceName" configurationHandler:nil];
+    XCDLumberjackNSLogger* logger = [XCDLumberjackNSLogger new];
+    [DDLog addLogger:logger];
+  
+    // xcode控制台的输出
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [DDTTYLogger sharedInstance].logFormatter = [[MyCustomFormatter alloc] init];
-  
+
     LogVerbose(@"system | Logger start...");
 }
 

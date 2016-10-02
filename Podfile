@@ -9,6 +9,7 @@ target 'Example' do
     pod 'AFNetworking'
     pod 'RETableViewManager'
     pod 'CocoaLumberjack', '2.3.0'
+    pod 'XCDLumberjackNSLogger', '~> 1.1'
     pod 'Aspects'
     pod 'SDWebImage'
     pod 'HexColors'
@@ -19,6 +20,7 @@ target 'Example' do
     pod 'ShareSDK3/ShareSDKPlatforms/QQ'
     pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
     pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'Wonderful'
 end
 
 xcodeproj 'Example/Example.xcodeproj'
