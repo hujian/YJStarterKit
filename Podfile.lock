@@ -25,10 +25,20 @@ PODS:
     - CocoaLumberjack/Default
   - DZNEmptyDataSet (1.8.1)
   - HexColors (4.0.0)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
   - MOBFoundation (2.0.11)
   - NSLogger (1.7.0):
     - NSLogger/Standard (= 1.7.0)
   - NSLogger/Standard (1.7.0)
+  - Overcoat (4.0.0-beta.2):
+    - AFNetworking/NSURLSession (~> 3.0)
+    - AFNetworking/Serialization (~> 3.0)
+    - Mantle (~> 2.0)
+  - Overcoat+ReactiveCocoa (4.0.0-beta.2):
+    - Overcoat (~> 4.0.0-beta.2)
+    - ReactiveCocoa (~> 2.4)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -63,6 +73,8 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - HexColors
   - MOBFoundation
+  - Overcoat
+  - Overcoat+ReactiveCocoa (~> 4.0.0-beta.2)
   - pop
   - ReactiveCocoa (= 2.5.0)
   - RETableViewManager
@@ -80,8 +92,11 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MOBFoundation: e213065e65eebd8146ab29d10a8445dc8f385091
   NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
+  Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
+  Overcoat+ReactiveCocoa: d49ce788620100453345a603aa3f8c7058b18cea
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
@@ -92,4 +107,6 @@ SPEC CHECKSUMS:
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   XCDLumberjackNSLogger: b39a8d2fee8094b3d8bf9031cb97e2200971addb
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 167e729c971583a88cb3d949bc99295cd2049ec6
+
+COCOAPODS: 1.0.1

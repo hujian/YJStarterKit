@@ -35,8 +35,12 @@
 }
 
 - (void)setupLog {
+
+#if DEBUG
     [YJLogger setup];
     [YJLogger startLogVCProgress];
+#endif
+
 }
 
 - (UIViewController*)rootViewController {

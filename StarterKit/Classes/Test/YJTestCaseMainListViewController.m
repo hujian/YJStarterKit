@@ -9,6 +9,7 @@
 #import "YJTestViewMoveViewController.h"
 #import "TestYJEffectViewController.h"
 #import "YJTestMarqueeViewController.h"
+#import "YJTestHTTPViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -21,7 +22,16 @@
     if (self) {
         @weakify(self);
         
-        YJTestCaseSection* section = [self addSection:@"基础UI控件"];
+        YJTestCaseSection* section = [self addSection:@"网络"];
+        
+        [self addTestCase:@"HTTP框架" toSection:section block:^() {
+            @strongify(self);
+            
+            YJTestHTTPViewController* vc = [[YJTestHTTPViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        section = [self addSection:@"基础UI控件"];
         
         [self addTestCase:@"按钮" toSection:section block:^() {
             @strongify(self);
