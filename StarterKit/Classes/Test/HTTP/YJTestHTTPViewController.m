@@ -17,7 +17,7 @@
     testButton.center = CGPointMake(60, 100);
     [self.view addSubview:testButton];
     [[testButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(YJButton* button) {
-        [[YJHTTPSessionManager sharedInstance] GET:testURL parameters:nil completion:nil];
+        [[YJHTTPSessionManager sharedInstance] GET:testURL parameters:nil completion:^(OVCResponse* response, NSError* error) {}];
     }];
 }
 

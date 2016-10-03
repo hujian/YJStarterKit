@@ -33,11 +33,12 @@
 		BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */; };
 		BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */; };
 		BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50A11D990BE000052FDD /* YJTableViewController.m */; };
-		BF8C50B81D9A4D6C00052FDD /* YJTestCaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50B51D9A4D6C00052FDD /* YJTestCaseListViewController.m */; };
-		BF8C50B91D9A4D6C00052FDD /* YJTestCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50B71D9A4D6C00052FDD /* YJTestCaseViewController.m */; };
 		BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50BB1D9A513D00052FDD /* YJTestCaseMainListViewController.m */; };
 		BF8C50BE1D9A552900052FDD /* no-data-page-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */; };
 		BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50C01D9A7BC900052FDD /* YJCircleView.m */; };
+		BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */; };
+		BFE229831DA2458700726408 /* YJTestCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229811DA2458700726408 /* YJTestCaseViewController.m */; };
+		BFE229861DA24A8B00726408 /* YJHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229851DA24A8B00726408 /* YJHTTPResponse.m */; };
 		BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2301D9B80F300788F51 /* YJButton.m */; };
 		BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2361D9B853400788F51 /* YJWebViewController.m */; };
 		BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */; };
@@ -102,16 +103,18 @@
 		BF8C509E1D98D04C00052FDD /* NSDate+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF8C50A01D990BE000052FDD /* YJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTableViewController.h; sourceTree = "<group>"; };
 		BF8C50A11D990BE000052FDD /* YJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTableViewController.m; sourceTree = "<group>"; };
-		BF8C50B41D9A4D6C00052FDD /* YJTestCaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseListViewController.h; sourceTree = "<group>"; };
-		BF8C50B51D9A4D6C00052FDD /* YJTestCaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseListViewController.m; sourceTree = "<group>"; };
-		BF8C50B61D9A4D6C00052FDD /* YJTestCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseViewController.h; sourceTree = "<group>"; };
-		BF8C50B71D9A4D6C00052FDD /* YJTestCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseViewController.m; sourceTree = "<group>"; };
 		BF8C50BA1D9A513D00052FDD /* YJTestCaseMainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseMainListViewController.h; sourceTree = "<group>"; };
 		BF8C50BB1D9A513D00052FDD /* YJTestCaseMainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseMainListViewController.m; sourceTree = "<group>"; };
 		BF8C50BD1D9A552900052FDD /* no-data-page-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-data-page-icon@2x.png"; sourceTree = "<group>"; };
 		BF8C50BF1D9A7BC900052FDD /* YJCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJCircleView.h; sourceTree = "<group>"; };
 		BF8C50C01D9A7BC900052FDD /* YJCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJCircleView.m; sourceTree = "<group>"; };
 		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
+		BFE2297E1DA2458700726408 /* YJTestCaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseListViewController.h; sourceTree = "<group>"; };
+		BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseListViewController.m; sourceTree = "<group>"; };
+		BFE229801DA2458700726408 /* YJTestCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseViewController.h; sourceTree = "<group>"; };
+		BFE229811DA2458700726408 /* YJTestCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseViewController.m; sourceTree = "<group>"; };
+		BFE229841DA24A8B00726408 /* YJHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHTTPResponse.h; sourceTree = "<group>"; };
+		BFE229851DA24A8B00726408 /* YJHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHTTPResponse.m; sourceTree = "<group>"; };
 		BFF3E22F1D9B80F300788F51 /* YJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJButton.h; sourceTree = "<group>"; };
 		BFF3E2301D9B80F300788F51 /* YJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJButton.m; sourceTree = "<group>"; };
 		BFF3E2351D9B853400788F51 /* YJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJWebViewController.h; sourceTree = "<group>"; };
@@ -348,17 +351,25 @@
 		BF8C50B31D9A4D6C00052FDD /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				BFE2297D1DA2458700726408 /* Base */,
 				BF81668F1DA2363800629AFD /* Animation */,
 				BF8166941DA2363800629AFD /* HTTP */,
 				BF8166971DA2363800629AFD /* Widget */,
-				BF8C50B41D9A4D6C00052FDD /* YJTestCaseListViewController.h */,
-				BF8C50B51D9A4D6C00052FDD /* YJTestCaseListViewController.m */,
-				BF8C50B61D9A4D6C00052FDD /* YJTestCaseViewController.h */,
-				BF8C50B71D9A4D6C00052FDD /* YJTestCaseViewController.m */,
 				BF8C50BA1D9A513D00052FDD /* YJTestCaseMainListViewController.h */,
 				BF8C50BB1D9A513D00052FDD /* YJTestCaseMainListViewController.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		BFE2297D1DA2458700726408 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFE2297E1DA2458700726408 /* YJTestCaseListViewController.h */,
+				BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */,
+				BFE229801DA2458700726408 /* YJTestCaseViewController.h */,
+				BFE229811DA2458700726408 /* YJTestCaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		BFF3E2461D9BA07600788F51 /* Animation */ = {
@@ -382,6 +393,8 @@
 		BFF3E2571DA2040200788F51 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BFE229841DA24A8B00726408 /* YJHTTPResponse.h */,
+				BFE229851DA24A8B00726408 /* YJHTTPResponse.m */,
 				BFF3E2581DA2040F00788F51 /* YJHTTPSessionManager.h */,
 				BFF3E2591DA2040F00788F51 /* YJHTTPSessionManager.m */,
 			);
@@ -555,8 +568,8 @@
 				BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */,
 				BF8166AC1DA2363800629AFD /* YJTestUserViewViewController.m in Sources */,
 				BF8166A81DA2363800629AFD /* YJTestLabelViewController.m in Sources */,
+				BFE229831DA2458700726408 /* YJTestCaseViewController.m in Sources */,
 				BF17C9521D9F9E0200CD566C /* YJMarqueeView.m in Sources */,
-				BF8C50B91D9A4D6C00052FDD /* YJTestCaseViewController.m in Sources */,
 				BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */,
 				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
 				BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */,
@@ -568,6 +581,7 @@
 				BF8166AA1DA2363800629AFD /* YJTestProgressViewController.m in Sources */,
 				BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */,
 				BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */,
+				BFE229861DA24A8B00726408 /* YJHTTPResponse.m in Sources */,
 				BF8C50C11D9A7BC900052FDD /* YJCircleView.m in Sources */,
 				BF8166A51DA2363800629AFD /* YJTestViewMoveViewController.m in Sources */,
 				BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */,
@@ -577,12 +591,12 @@
 				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
 				BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */,
 				BFF3E2401D9B936600788F51 /* YJUserView.m in Sources */,
+				BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */,
 				BF8166A41DA2363800629AFD /* TestYJEffectViewController.m in Sources */,
 				BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,
-				BF8C50B81D9A4D6C00052FDD /* YJTestCaseListViewController.m in Sources */,
 				BF8166A71DA2363800629AFD /* YJTestButtonViewController.m in Sources */,
 				BFF3E2561D9CE53A00788F51 /* YJShareControl.m in Sources */,
 				BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */,
