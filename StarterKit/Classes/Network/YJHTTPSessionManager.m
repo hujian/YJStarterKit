@@ -1,11 +1,17 @@
 #import "YJHTTPSessionManager.h"
 #import "Overcoat.h"
+#import "OVCModelResponseSerializer.h"
+#import "OVCURLMatcher.h"
 
 @interface YJHTTPInternalSessionManager : OVCHTTPSessionManager
 
 @end
 
 @implementation YJHTTPInternalSessionManager
+
++ (NSDictionary *)modelClassesByResourcePath {
+    return nil;
+}
 
 @end
 
@@ -27,9 +33,24 @@ DEF_SINGLETON(YJHTTPSessionManager);
     return self;
 }
 
+- (void)setup:(NSString*)serverBaseURL
+     modelMap:(NSDictionary*)modelMap
+  resourceMap:(NSDictionary*)resourceMap
+     errorMap:(NSDictionary*)errorMap {
+    self.serverBaseURL = serverBaseURL;
+        
+    self.manager.responseSerializer = [OVCModelResponseSerializer
+     serializerWithURLMatcher:[OVCURLMatcher matcherWithBasePath:self.manager.baseURL.path
+                                              modelClassesByPath:modelMap]
+     responseClassURLMatcher:[OVCURLMatcher matcherWithBasePath:self.manager.baseURL.path
+                                             modelClassesByPath:resourceMap]
+     errorModelClassURLMatcher:[OVCURLMatcher matcherWithBasePath:self.manager.baseURL.path
+                                               modelClassesByPath:errorMap]];
+}
+
 - (NSURL*)fullURL:(NSString*)url {
-    if (self.baseURL) {
-        return [NSURL URLWithString:url relativeToURL:[NSURL URLWithString:self.baseURL]];
+    if (self.serverBaseURL) {
+        return [NSURL URLWithString:url relativeToURL:[NSURL URLWithString:self.serverBaseURL]];
     } else {
         return [NSURL URLWithString:url];
     }

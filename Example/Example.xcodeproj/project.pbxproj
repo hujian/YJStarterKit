@@ -28,6 +28,7 @@
 		BF8166AA1DA2363800629AFD /* YJTestProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF81669F1DA2363800629AFD /* YJTestProgressViewController.m */; };
 		BF8166AB1DA2363800629AFD /* YJTestSplahViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8166A11DA2363800629AFD /* YJTestSplahViewController.m */; };
 		BF8166AC1DA2363800629AFD /* YJTestUserViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8166A31DA2363800629AFD /* YJTestUserViewViewController.m */; };
+		BF8296511DA3B35D007AB033 /* YJHTTPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8296501DA3B35D007AB033 /* YJHTTPLogger.m */; };
 		BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50951D98C43700052FDD /* UIColor+YJStarterKit.m */; };
 		BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C50981D98C9FB00052FDD /* UIView+YJStarterKit.m */; };
 		BF8C509C1D98CE4300052FDD /* NSArray+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C509B1D98CE4300052FDD /* NSArray+YJStarterKit.m */; };
@@ -93,6 +94,8 @@
 		BF8166A11DA2363800629AFD /* YJTestSplahViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestSplahViewController.m; sourceTree = "<group>"; };
 		BF8166A21DA2363800629AFD /* YJTestUserViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestUserViewViewController.h; sourceTree = "<group>"; };
 		BF8166A31DA2363800629AFD /* YJTestUserViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestUserViewViewController.m; sourceTree = "<group>"; };
+		BF82964F1DA3B35D007AB033 /* YJHTTPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHTTPLogger.h; sourceTree = "<group>"; };
+		BF8296501DA3B35D007AB033 /* YJHTTPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHTTPLogger.m; sourceTree = "<group>"; };
 		BF8C50941D98C43700052FDD /* UIColor+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YJStarterKit.h"; sourceTree = "<group>"; };
 		BF8C50951D98C43700052FDD /* UIColor+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF8C50971D98C9FB00052FDD /* UIView+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJStarterKit.h"; sourceTree = "<group>"; };
@@ -397,6 +400,8 @@
 				BFE229851DA24A8B00726408 /* YJHTTPResponse.m */,
 				BFF3E2581DA2040F00788F51 /* YJHTTPSessionManager.h */,
 				BFF3E2591DA2040F00788F51 /* YJHTTPSessionManager.m */,
+				BF82964F1DA3B35D007AB033 /* YJHTTPLogger.h */,
+				BF8296501DA3B35D007AB033 /* YJHTTPLogger.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
 				BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */,
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
+				BF8296511DA3B35D007AB033 /* YJHTTPLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
 				BF8166A91DA2363800629AFD /* YJTestMarqueeViewController.m in Sources */,
 				BF8166A61DA2363800629AFD /* YJTestHTTPViewController.m in Sources */,

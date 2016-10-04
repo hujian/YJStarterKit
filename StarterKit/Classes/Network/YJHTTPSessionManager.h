@@ -17,13 +17,15 @@ AS_SINGLETON(YJHTTPSessionManager);
  parameters:(id)parameters
  completion:(void(^)(YJHTTPResponse* response, NSError* completion))completion;
 
-// 服务器地址，加上根路径也可以，允许动态修改
-@property (nonatomic, strong) NSString* baseURL;
-
+// 必须设置
 // 接口返回的实际数据和model的对应关系
-@property (nonatomic, strong) NSDictionary* modelMap;
-
 // 接口返回的数据除了实际的model数据外，通常还会有一些meta data，这个就是对应关系
-@property (nonatomic, strong) NSDictionary* resourcePathMap;
+- (void)setup:(NSString*)serverBaseURL
+     modelMap:(NSDictionary*)modelMap
+  resourceMap:(NSDictionary*)resourceMap
+     errorMap:(NSDictionary*)errorMap;
+
+// 服务器地址，加上根路径也可以，允许动态修改
+@property (nonatomic, strong) NSString* serverBaseURL;
 
 @end
