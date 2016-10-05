@@ -18,6 +18,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     // 是否需要测试用例
     if ([self needTestCase]) {
         self.window.rootViewController = [self testCaseViewController];

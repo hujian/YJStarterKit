@@ -13,8 +13,6 @@
 AS_SINGLETON(YJHTTPSessionManager);
 
 // 在调用其他任何方法必须调用该方法
-// 全部可以传nil
-// 如果没有
 - (void)setup:(NSString*)serverBaseURL
      modelMap:(NSDictionary*)modelMap
   resourceMap:(NSDictionary*)resourceMap
@@ -32,5 +30,8 @@ AS_SINGLETON(YJHTTPSessionManager);
 
 // 服务器地址，加上根路径也可以，允许动态修改
 @property (nonatomic, strong) NSString* serverBaseURL;
+
+// 请求是否缓存
+@property (nonatomic, assign) BOOL responseCached;
 
 @end

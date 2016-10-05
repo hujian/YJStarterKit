@@ -52,6 +52,7 @@ PODS:
   - Overcoat+ReactiveCocoa (4.0.0-beta.2):
     - Overcoat (~> 4.0.0-beta.2)
     - ReactiveCocoa (~> 2.4)
+  - PINCache (2.3)
   - pop (1.0.9)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -89,6 +90,7 @@ DEPENDENCIES:
   - OHHTTPStubs
   - Overcoat
   - Overcoat+ReactiveCocoa (~> 4.0.0-beta.2)
+  - PINCache
   - pop
   - ReactiveCocoa (= 2.5.0)
   - RETableViewManager
@@ -112,6 +114,7 @@ SPEC CHECKSUMS:
   OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
   Overcoat+ReactiveCocoa: d49ce788620100453345a603aa3f8c7058b18cea
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
@@ -122,6 +125,6 @@ SPEC CHECKSUMS:
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   XCDLumberjackNSLogger: b39a8d2fee8094b3d8bf9031cb97e2200971addb
 
-PODFILE CHECKSUM: 9bd447b033e6870860765690a86ecab80f847bba
+PODFILE CHECKSUM: 238d1d31a450a34262c5d5b7282e85dfa1768428
 
 COCOAPODS: 1.0.1

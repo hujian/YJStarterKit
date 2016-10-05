@@ -24,6 +24,7 @@ target 'Example' do
     pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
     pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
     pod 'Wonderful'
+    pod 'PINCache'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

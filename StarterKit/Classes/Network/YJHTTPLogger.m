@@ -77,7 +77,7 @@ DEF_SINGLETON(YJHTTPLogger);
     if (error) {
         LogError(@"HTTP | failed | %@ %@ | code: %ld, time: %.04fs | error: %@", [task.originalRequest HTTPMethod], [[task.response URL] absoluteString], (long)responseStatusCode, elapsedTime, error);
     } else {
-        LogError(@"HTTP | succeed | %@ %@ | time: %.04fs | body: %@", [task.originalRequest HTTPMethod], [[task.response URL] absoluteString], elapsedTime, [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+        LogVerbose(@"HTTP | succeed | %@ %@ | time: %.04fs | body: %@", [task.originalRequest HTTPMethod], [[task.response URL] absoluteString], elapsedTime, [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
     }
 
 }
