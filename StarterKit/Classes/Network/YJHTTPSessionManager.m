@@ -76,4 +76,16 @@ DEF_SINGLETON(YJHTTPSessionManager);
     }];
 }
 
+- (void)POST:(NSString *)URLString
+  parameters:(id)parameters
+  completion:(void(^)(YJHTTPResponse* response, NSError* completion))completion {
+ 
+    NSString* fullURL = [self fullURL:URLString].absoluteString;
+    [self.manager POST:fullURL parameters:parameters completion:^(OVCResponse* response, NSError* error) {
+        if (completion) {
+            completion((YJHTTPResponse*)response, error);
+        }
+    }];
+}
+
 @end

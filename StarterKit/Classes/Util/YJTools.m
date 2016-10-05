@@ -71,4 +71,11 @@
     LogVerbose(@"system | call srand to seed rand");
 }
 
++ (NSString*)fileContent:(NSString*)fileName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    NSError* error = nil;
+    NSString *res = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    return res;
+}
+
 @end

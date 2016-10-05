@@ -32,6 +32,19 @@ PODS:
   - NSLogger (1.7.0):
     - NSLogger/Standard (= 1.7.0)
   - NSLogger/Standard (1.7.0)
+  - OHHTTPStubs (5.2.1):
+    - OHHTTPStubs/Default (= 5.2.1)
+  - OHHTTPStubs/Core (5.2.1)
+  - OHHTTPStubs/Default (5.2.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.1)
   - Overcoat (4.0.0-beta.2):
     - AFNetworking/NSURLSession (~> 3.0)
     - AFNetworking/Serialization (~> 3.0)
@@ -73,6 +86,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - HexColors
   - MOBFoundation
+  - OHHTTPStubs
   - Overcoat
   - Overcoat+ReactiveCocoa (~> 4.0.0-beta.2)
   - pop
@@ -95,6 +109,7 @@ SPEC CHECKSUMS:
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MOBFoundation: e213065e65eebd8146ab29d10a8445dc8f385091
   NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
+  OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
   Overcoat+ReactiveCocoa: d49ce788620100453345a603aa3f8c7058b18cea
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
@@ -107,6 +122,6 @@ SPEC CHECKSUMS:
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   XCDLumberjackNSLogger: b39a8d2fee8094b3d8bf9031cb97e2200971addb
 
-PODFILE CHECKSUM: 167e729c971583a88cb3d949bc99295cd2049ec6
+PODFILE CHECKSUM: 9bd447b033e6870860765690a86ecab80f847bba
 
 COCOAPODS: 1.0.1

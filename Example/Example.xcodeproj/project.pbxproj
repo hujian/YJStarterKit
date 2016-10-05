@@ -14,6 +14,8 @@
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
 		BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F91D97B12F0050CACC /* LaunchScreen.storyboard */; };
+		BF2F01421DA4D26F00D41F3F /* YJHTTPTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2F01411DA4D26F00D41F3F /* YJHTTPTestManager.m */; };
+		BF2F01471DA4DC7B00D41F3F /* YJTestHTTP.json in Resources */ = {isa = PBXBuildFile; fileRef = BF2F01461DA4DC7B00D41F3F /* YJTestHTTP.json */; };
 		BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39FB6B1D9D4F9B00775205 /* NSObject+YJStarterKit.m */; };
 		BF62F0FB1D97B343004D3C73 /* YJSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0F51D97B343004D3C73 /* YJSplashView.m */; };
 		BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62F0FD1D97B3CE004D3C73 /* YJTools.m */; };
@@ -66,6 +68,9 @@
 		BF2C22F71D97B12F0050CACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF2C22FA1D97B12F0050CACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2C22FC1D97B12F0050CACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2F01401DA4D26F00D41F3F /* YJHTTPTestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHTTPTestManager.h; sourceTree = "<group>"; };
+		BF2F01411DA4D26F00D41F3F /* YJHTTPTestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHTTPTestManager.m; sourceTree = "<group>"; };
+		BF2F01461DA4DC7B00D41F3F /* YJTestHTTP.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YJTestHTTP.json; sourceTree = "<group>"; };
 		BF39FB6A1D9D4F9B00775205 /* NSObject+YJStarterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJStarterKit.h"; sourceTree = "<group>"; };
 		BF39FB6B1D9D4F9B00775205 /* NSObject+YJStarterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJStarterKit.m"; sourceTree = "<group>"; };
 		BF62F0F41D97B343004D3C73 /* YJSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSplashView.h; sourceTree = "<group>"; };
@@ -197,6 +202,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BF2F01451DA4DC7B00D41F3F /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				BF2F01461DA4DC7B00D41F3F /* YJTestHTTP.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
 		BF3CFB841D9D556200DB7DF9 /* Pay */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +311,7 @@
 		BF8166941DA2363800629AFD /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				BF2F01451DA4DC7B00D41F3F /* TestData */,
 				BF8166951DA2363800629AFD /* YJTestHTTPViewController.h */,
 				BF8166961DA2363800629AFD /* YJTestHTTPViewController.m */,
 			);
@@ -402,6 +416,8 @@
 				BFF3E2591DA2040F00788F51 /* YJHTTPSessionManager.m */,
 				BF82964F1DA3B35D007AB033 /* YJHTTPLogger.h */,
 				BF8296501DA3B35D007AB033 /* YJHTTPLogger.m */,
+				BF2F01401DA4D26F00D41F3F /* YJHTTPTestManager.h */,
+				BF2F01411DA4D26F00D41F3F /* YJHTTPTestManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -479,6 +495,7 @@
 			files = (
 				BF2C22FB1D97B12F0050CACC /* LaunchScreen.storyboard in Resources */,
 				BFF3E2451D9B9D4500788F51 /* user-view-default.png in Resources */,
+				BF2F01471DA4DC7B00D41F3F /* YJTestHTTP.json in Resources */,
 				BF8C50BE1D9A552900052FDD /* no-data-page-icon@2x.png in Resources */,
 				BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */,
 			);
@@ -581,6 +598,7 @@
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
 				BF8296511DA3B35D007AB033 /* YJHTTPLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
+				BF2F01421DA4D26F00D41F3F /* YJHTTPTestManager.m in Sources */,
 				BF8166A91DA2363800629AFD /* YJTestMarqueeViewController.m in Sources */,
 				BF8166A61DA2363800629AFD /* YJTestHTTPViewController.m in Sources */,
 				BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */,

@@ -9,6 +9,7 @@ target 'Example' do
     pod 'AFNetworking'
     pod 'Overcoat'
     pod 'Overcoat+ReactiveCocoa', '~> 4.0.0-beta.2'
+    pod 'OHHTTPStubs'
     pod 'RETableViewManager'
     pod 'CocoaLumberjack', '2.3.0'
     pod 'XCDLumberjackNSLogger', '~> 1.1'

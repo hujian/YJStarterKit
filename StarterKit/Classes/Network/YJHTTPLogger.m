@@ -21,6 +21,8 @@ static NSError * AFNetworkErrorFromNotification(NSNotification *notification) {
 DEF_SINGLETON(YJHTTPLogger);
 
 - (void)startLogging {
+    [self stopLogging];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidStart:) name:AFNetworkingTaskDidResumeNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:AFNetworkingTaskDidCompleteNotification object:nil];
 }
