@@ -1,7 +1,9 @@
 #import "YJHTTPSessionManager.h"
+#import "YJHTTPLogger.h"
 #import "Overcoat.h"
 #import "OVCModelResponseSerializer.h"
 #import "OVCURLMatcher.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 @interface YJHTTPInternalSessionManager : OVCHTTPSessionManager
 
@@ -46,6 +48,12 @@ DEF_SINGLETON(YJHTTPSessionManager);
                                              modelClassesByPath:resourceMap]
      errorModelClassURLMatcher:[OVCURLMatcher matcherWithBasePath:self.manager.baseURL.path
                                                modelClassesByPath:errorMap]];
+    
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+#if DEBUG
+    [[YJHTTPLogger sharedInstance] startLogging];
+#endif
 }
 
 - (NSURL*)fullURL:(NSString*)url {

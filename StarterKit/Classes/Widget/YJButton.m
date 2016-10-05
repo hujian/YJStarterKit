@@ -112,7 +112,6 @@
 }
 
 - (void)dealloc {
-    LogVerbose(@"YJButton dealloc");
 }
 
 @end
