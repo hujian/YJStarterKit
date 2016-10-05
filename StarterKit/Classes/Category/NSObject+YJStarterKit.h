@@ -9,5 +9,7 @@
 @interface NSObject(YJStarterKit)
 
 - (BOOL)isNotEmpty;
+- (NSString*)toString;
+- (NSNumber*)toNumber;
 
 @end

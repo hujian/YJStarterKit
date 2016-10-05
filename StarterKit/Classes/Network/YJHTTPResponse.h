@@ -18,6 +18,4 @@ typedef enum __YJHTTPResponseType {
 
 @property (nonatomic, strong) id result;
 
-@property (nonatomic, strong) 
-
 @end

@@ -6,7 +6,6 @@
 #import "AFNetworkActivityIndicatorManager.h"
 #import "ReactiveCocoa.h"
 #import "PINCache.h"
-#import "YJHTTPLogger.h"
 
 @interface YJHTTPInternalSessionManager : OVCHTTPSessionManager
 
@@ -73,7 +72,7 @@ DEF_SINGLETON(YJHTTPSessionManager);
 }
 
 - (NSString*)responseSsavingKey:(NSString*)URL parameters:(id)parameters {
-    
+    return nil;
 }
 
 - (void)handleResponse:(OVCResponse*)_response error:(NSError*)error completion:(void(^)(YJHTTPResponse* response, NSError* error))completion {
