@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '37699AEE94869C61F072E2032DC4195B'
+               BlueprintIdentifier = 'D1EC54D66ACCE2D8DB85B137FCF2B675'
                BlueprintName = 'XCDLumberjackNSLogger'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXCDLumberjackNSLogger.a'>

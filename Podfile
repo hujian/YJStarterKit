@@ -25,6 +25,7 @@ target 'Example' do
     pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
     pod 'Wonderful'
     pod 'PINCache'
+    pod 'NSDate-Escort'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

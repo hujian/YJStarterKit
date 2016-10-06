@@ -29,6 +29,7 @@ PODS:
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
   - MOBFoundation (2.0.11)
+  - NSDate-Escort (1.7.0)
   - NSLogger (1.7.0):
     - NSLogger/Standard (= 1.7.0)
   - NSLogger/Standard (1.7.0)
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - HexColors
   - MOBFoundation
+  - NSDate-Escort
   - OHHTTPStubs
   - Overcoat
   - Overcoat+ReactiveCocoa (~> 4.0.0-beta.2)
@@ -110,6 +112,7 @@ SPEC CHECKSUMS:
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MOBFoundation: e213065e65eebd8146ab29d10a8445dc8f385091
+  NSDate-Escort: 3469fefab423c094108c2e864416b61b6ac0edbc
   NSLogger: daa17368272ddf10a0850c218fe49de23b50f2eb
   OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
@@ -125,6 +128,6 @@ SPEC CHECKSUMS:
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   XCDLumberjackNSLogger: b39a8d2fee8094b3d8bf9031cb97e2200971addb
 
-PODFILE CHECKSUM: 238d1d31a450a34262c5d5b7282e85dfa1768428
+PODFILE CHECKSUM: 95ae660f916bbb5a51a53121c704f05c3752fb0f
 
 COCOAPODS: 1.0.1

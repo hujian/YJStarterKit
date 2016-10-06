@@ -62,7 +62,7 @@
     testURL = @"http://api.hjaok.com/delay.json";
     [[YJHTTPTestManager sharedInstance] addTestResponse:[YJTools fileContent:@"YJTestHTTP.json"]
                                                  forURL:testURL
-                                       requestDelayTime:10
+                                       requestDelayTime:5
                                       responseDelayTime:0];
     testButton.center = CGPointMake(260, 100);
     [self.view addSubview:testButton];
