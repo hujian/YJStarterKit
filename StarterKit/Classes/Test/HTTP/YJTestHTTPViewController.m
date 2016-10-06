@@ -10,12 +10,25 @@
 
 @implementation YJTestHTTPViewController
 
+- (void)printInfo:(NSString*)url response:(YJHTTPResponse*)response error:(NSError*)error {
+    if (!error) {
+        if (response.responseType == YJHTTPResponseTypeDisk) {
+            [self printDebugInfo:[NSString stringWithFormat:@"从磁盘恢复 %@, body: %@", url, response.result]];
+        } else {
+            [self printDebugInfo:[NSString stringWithFormat:@"从网络获取 %@, body: %@", url, response.result]];
+        }
+    } else {
+        [self printDebugInfo:[NSString stringWithFormat:@"%@ 出错了", url]];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     @weakify(self);
 
     [[YJHTTPSessionManager sharedInstance] setup:nil modelMap:nil resourceMap:nil errorMap:nil];
+    [YJHTTPSessionManager sharedInstance].responseCached = YES;
 
     YJButton* testButton = [self testButton:@"Get成功"];
     NSString* testURL = @"http://api.hjaok.com/test.json";
@@ -28,7 +41,7 @@
     [[testButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(YJButton* button) {
         [[YJHTTPSessionManager sharedInstance] GET:testURL parameters:nil completion:^(YJHTTPResponse* response, NSError* error) {
             @strongify(self);
-            [self printDebugInfo:[NSString stringWithFormat:@"%@ 成功了, body: %@", testURL, response.result]];
+            [self printInfo:testURL response:response error:error];
         }];
     }];
     
@@ -40,7 +53,7 @@
         [[YJHTTPSessionManager sharedInstance] GET:testURL parameters:nil completion:^(YJHTTPResponse* response, NSError* error) {
             @strongify(self);
             if (error) {
-                [self printDebugInfo:[NSString stringWithFormat:@"%@ 出错了", testURL]];
+                [self printInfo:testURL response:response error:error];
             }
         }];
     }];
@@ -56,7 +69,7 @@
     [[testButton rac_signalForControlEvents:UIControlEventTouchDown] subscribeNext:^(YJButton* button) {
         [[YJHTTPSessionManager sharedInstance] GET:testURL parameters:nil completion:^(YJHTTPResponse* response, NSError* error) {
             @strongify(self);
-            [self printDebugInfo:[NSString stringWithFormat:@"%@ 成功了, body: %@", testURL, response.result]];
+            [self printInfo:testURL response:response error:error];
         }];
     }];
 }

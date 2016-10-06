@@ -11,6 +11,8 @@
 // string是url的情况下，加入参数，不会执行url encode
 - (NSString *)urlByAppendingParams:(NSDictionary *)params;
 
-- (NSString *)URLEncode;
+// 这俩函数没测试过，用的时候小心
+- (NSString *)URLEncode:(NSString*)string;
+- (NSString *)URLDecode:(NSString *)string;
 
 @end

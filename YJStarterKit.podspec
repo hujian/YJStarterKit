@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = "https://github.com/hujian/YJStarterKit.git"
   s.license          = 'MIT'
-  s.author           = { "杨玉刚" => "smartydroid@gmail.com" }
+  s.author           = { "一剑" => "hujian2009@gmail.com" }
   s.source           = { :git => "https://github.com/hujian/YJStarterKit.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '8.0'

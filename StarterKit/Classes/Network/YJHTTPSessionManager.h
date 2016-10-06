@@ -20,18 +20,19 @@ AS_SINGLETON(YJHTTPSessionManager);
 
 // GET方法
 - (void)GET:(NSString *)URLString
- parameters:(id)parameters
+ parameters:(NSDictionary*)parameters
  completion:(void(^)(YJHTTPResponse* response, NSError* completion))completion;
 
 // POST方法
 - (void)POST:(NSString *)URLString
-  parameters:(id)parameters
+  parameters:(NSDictionary*)parameters
   completion:(void(^)(YJHTTPResponse* response, NSError* completion))completion;
 
 // 服务器地址，加上根路径也可以，允许动态修改
 @property (nonatomic, strong) NSString* serverBaseURL;
 
-// 请求是否缓存
+// GET请求是否缓存，其他类型的请求没有缓存功能（想不出来什么需求用的着）
+// 默认NO
 @property (nonatomic, assign) BOOL responseCached;
 
 @end
