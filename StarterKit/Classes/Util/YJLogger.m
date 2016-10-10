@@ -6,7 +6,6 @@
 
 @end
 
-
 @implementation MyCustomFormatter
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {

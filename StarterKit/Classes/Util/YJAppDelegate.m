@@ -3,6 +3,7 @@
 #import "YJLogger.h"
 #import "YJTestCaseMainListViewController.h"
 #import "YJTools.h"
+#import "YJReachabilityManager.h"
 
 @implementation YJAppDelegate
 
@@ -13,6 +14,10 @@
     
     // 随机种子
     [YJTools initRandomTimeSeed];
+    
+    // 开启网络状态监控
+    [[YJReachabilityManager sharedInstance] start];
+    []
   
     // 页面入口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

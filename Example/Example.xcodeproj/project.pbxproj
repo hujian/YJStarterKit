@@ -42,6 +42,8 @@
 		BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */; };
 		BFE229831DA2458700726408 /* YJTestCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229811DA2458700726408 /* YJTestCaseViewController.m */; };
 		BFE229861DA24A8B00726408 /* YJHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229851DA24A8B00726408 /* YJHTTPResponse.m */; };
+		BFF38F031DA795C700CEC415 /* YJImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF38F021DA795C700CEC415 /* YJImageView.m */; };
+		BFF38F091DA7980B00CEC415 /* YJReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF38F081DA7980B00CEC415 /* YJReachabilityManager.m */; };
 		BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2301D9B80F300788F51 /* YJButton.m */; };
 		BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E2361D9B853400788F51 /* YJWebViewController.m */; };
 		BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E23C1D9B8F6C00788F51 /* YJXibView.m */; };
@@ -124,6 +126,10 @@
 		BFE229811DA2458700726408 /* YJTestCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseViewController.m; sourceTree = "<group>"; };
 		BFE229841DA24A8B00726408 /* YJHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHTTPResponse.h; sourceTree = "<group>"; };
 		BFE229851DA24A8B00726408 /* YJHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHTTPResponse.m; sourceTree = "<group>"; };
+		BFF38F011DA795C700CEC415 /* YJImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJImageView.h; sourceTree = "<group>"; };
+		BFF38F021DA795C700CEC415 /* YJImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJImageView.m; sourceTree = "<group>"; };
+		BFF38F071DA7980B00CEC415 /* YJReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJReachabilityManager.h; sourceTree = "<group>"; };
+		BFF38F081DA7980B00CEC415 /* YJReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJReachabilityManager.m; sourceTree = "<group>"; };
 		BFF3E22F1D9B80F300788F51 /* YJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJButton.h; sourceTree = "<group>"; };
 		BFF3E2301D9B80F300788F51 /* YJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJButton.m; sourceTree = "<group>"; };
 		BFF3E2351D9B853400788F51 /* YJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJWebViewController.h; sourceTree = "<group>"; };
@@ -296,6 +302,8 @@
 				BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */,
 				BF17C9561D9FAAF300CD566C /* YJLabel.h */,
 				BF17C9571D9FAAF300CD566C /* YJLabel.m */,
+				BFF38F011DA795C700CEC415 /* YJImageView.h */,
+				BFF38F021DA795C700CEC415 /* YJImageView.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -423,6 +431,8 @@
 				BF8296501DA3B35D007AB033 /* YJHTTPLogger.m */,
 				BF2F01401DA4D26F00D41F3F /* YJHTTPTestManager.h */,
 				BF2F01411DA4D26F00D41F3F /* YJHTTPTestManager.m */,
+				BFF38F071DA7980B00CEC415 /* YJReachabilityManager.h */,
+				BFF38F081DA7980B00CEC415 /* YJReachabilityManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -592,6 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF3E25A1DA2040F00788F51 /* YJHTTPSessionManager.m in Sources */,
+				BFF38F031DA795C700CEC415 /* YJImageView.m in Sources */,
 				BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */,
 				BF8166AC1DA2363800629AFD /* YJTestUserViewViewController.m in Sources */,
 				BF8166A81DA2363800629AFD /* YJTestLabelViewController.m in Sources */,
@@ -615,6 +626,7 @@
 				BF8166A51DA2363800629AFD /* YJTestViewMoveViewController.m in Sources */,
 				BF39FB6C1D9D4F9B00775205 /* NSObject+YJStarterKit.m in Sources */,
 				BF8C50991D98C9FB00052FDD /* UIView+YJStarterKit.m in Sources */,
+				BFF38F091DA7980B00CEC415 /* YJReachabilityManager.m in Sources */,
 				BF8166AB1DA2363800629AFD /* YJTestSplahViewController.m in Sources */,
 				BFF3E2491D9BA73E00788F51 /* YJViewMoveAnimation.m in Sources */,
 				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
