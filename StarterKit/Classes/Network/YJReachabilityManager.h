@@ -30,7 +30,6 @@ AS_SINGLETON(YJReachabilityManager);
 @property (readonly, nonatomic, assign) YJNetworkReachabilityStatus networkReachabilityStatus;
 
 // 网络通不通，注意不是说能不能访问某个host，而是本地路由能不能通
-// 不要
 @property (readonly, nonatomic, assign) BOOL reachable;
 @property (readonly, nonatomic, assign) BOOL reachableViaWWAN;
 @property (readonly, nonatomic, assign) BOOL reachableViaWiFi;

@@ -7,7 +7,6 @@
 
 @implementation YJAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 日志
     [self setupLog];
@@ -16,8 +15,8 @@
     [YJTools initRandomTimeSeed];
     
     // 开启网络状态监控
+    
     [[YJReachabilityManager sharedInstance] start];
-    []
   
     // 页面入口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
