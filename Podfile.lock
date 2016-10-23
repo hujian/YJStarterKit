@@ -67,6 +67,9 @@ PODS:
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
   - REValidation (0.1.4)
+  - RMStore (0.7.1):
+    - RMStore/Core (= 0.7.1)
+  - RMStore/Core (0.7.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -96,6 +99,7 @@ DEPENDENCIES:
   - pop
   - ReactiveCocoa (= 2.5.0)
   - RETableViewManager
+  - RMStore
   - SDWebImage
   - ShareSDK3
   - ShareSDK3/ShareSDKPlatforms/QQ
@@ -123,11 +127,12 @@ SPEC CHECKSUMS:
   REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
   RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  RMStore: fb1e7b6b056d6bf3d7c0c749fccf5187235de59d
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK3: 2fa975dd22937fc7de3f6b5d0c41a18ba0dd1661
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
   XCDLumberjackNSLogger: b39a8d2fee8094b3d8bf9031cb97e2200971addb
 
-PODFILE CHECKSUM: 95ae660f916bbb5a51a53121c704f05c3752fb0f
+PODFILE CHECKSUM: dfb2eb6d6428cf05d0364d0d08ae9ba8998d9def
 
 COCOAPODS: 1.0.1

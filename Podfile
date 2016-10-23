@@ -26,6 +26,7 @@ target 'Example' do
     pod 'Wonderful'
     pod 'PINCache'
     pod 'NSDate-Escort'
+    pod 'RMStore'
 end
 
 xcodeproj 'Example/Example.xcodeproj'

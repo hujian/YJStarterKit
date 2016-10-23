@@ -89,6 +89,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RMStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -122,7 +127,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>144B5FB850B26D8E6807BA5EC5E7A144</key>
+		<key>1D7C25DD8CAF9D7EAA4BDED5FE80D509</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A4964077A24D3910C7B1CD3EB6B90B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,12 +142,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AA31C7C82CBA61BF9D1999A2A639505</key>
+		<key>3AFA4A2088C3F0A994FC88536D50BDBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AFA4A2088C3F0A994FC88536D50BDBA</key>
+		<key>3F40F680AA4FEBD6E553C3B76D845B2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,12 +162,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45981940EFD350B552827384396DF0AF</key>
+		<key>48F8F8C4B9F15133427B27B9BF7F181D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E6158126699E641F01AECF782E860C9</key>
+		<key>5042961613FD2AD681246858BFE0CCFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,12 +177,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C30E3509AD8CDB2E8C3B41487ED9810</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7316F341EEF655DB1DE36F0BF901B69F</key>
+		<key>6148796D9BE1CF62FF19BDF6639DCB0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,7 +197,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BBC62E6F6608A24996E4C259ED74625</key>
+		<key>931CAF1C29E660F5AEF82672A0EBB2B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -202,17 +207,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BECFEBFB22B8A164940251BE00FDD08E</key>
+		<key>B3D11858654B2A9B9E3621856184DA94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C7D65D34D9350085E1B8CC62F36E0F44</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D1EC54D66ACCE2D8DB85B137FCF2B675</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -223,6 +223,16 @@
 			<true/>
 		</dict>
 		<key>E9EF397B95762DDB254C71DDCB4B1381</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC849FE216762DFEE8C10D3DB588C759</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F41EC9DE93F7C1D06F452D36FAB02386</key>
 		<dict>
 			<key>primary</key>
 			<true/>
