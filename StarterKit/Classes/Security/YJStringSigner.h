@@ -2,4 +2,8 @@
 
 @interface YJStringSigner : NSObject
 
+- (NSString *)algorithmName;
+
+- (NSString *)signString:(NSString *)string;
+
 @end

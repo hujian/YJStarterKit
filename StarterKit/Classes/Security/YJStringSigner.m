@@ -8,4 +8,12 @@
 
 @implementation YJStringSigner
 
+- (NSString *)algorithmName {
+    return nil;
+}
+
+- (NSString *)signString:(NSString *)string {
+    return nil;
+}
+
 @end

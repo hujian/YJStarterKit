@@ -47,6 +47,7 @@
 		BFA4B38B1DBDB2DB0039E012 /* YJStoreProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38A1DBDB2DB0039E012 /* YJStoreProduct.m */; };
 		BFA4B38E1DBDBB200039E012 /* YJStorePayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38D1DBDBB200039E012 /* YJStorePayResult.m */; };
 		BFA4B3981DBE0F3E0039E012 /* YJStringSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */; };
+		BFA4B39B1DBE1CB90039E012 /* YJBase64Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */; };
 		BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */; };
 		BFE229831DA2458700726408 /* YJTestCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229811DA2458700726408 /* YJTestCaseViewController.m */; };
 		BFE229861DA24A8B00726408 /* YJHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229851DA24A8B00726408 /* YJHTTPResponse.m */; };
@@ -143,6 +144,8 @@
 		BFA4B38F1DBDD3FE0039E012 /* YJCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YJCommon.h; path = Util/YJCommon.h; sourceTree = "<group>"; };
 		BFA4B3961DBE0F3E0039E012 /* YJStringSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStringSigner.h; sourceTree = "<group>"; };
 		BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStringSigner.m; sourceTree = "<group>"; };
+		BFA4B3991DBE1CB90039E012 /* YJBase64Signer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBase64Signer.h; sourceTree = "<group>"; };
+		BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBase64Signer.m; sourceTree = "<group>"; };
 		BFE2297E1DA2458700726408 /* YJTestCaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseListViewController.h; sourceTree = "<group>"; };
 		BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestCaseListViewController.m; sourceTree = "<group>"; };
 		BFE229801DA2458700726408 /* YJTestCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseViewController.h; sourceTree = "<group>"; };
@@ -458,6 +461,8 @@
 			children = (
 				BFA4B3961DBE0F3E0039E012 /* YJStringSigner.h */,
 				BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */,
+				BFA4B3991DBE1CB90039E012 /* YJBase64Signer.h */,
+				BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,
 				BF8D80391DBCB37F00D71FD1 /* YJStore.m in Sources */,
 				BF8166A71DA2363800629AFD /* YJTestButtonViewController.m in Sources */,
+				BFA4B39B1DBE1CB90039E012 /* YJBase64Signer.m in Sources */,
 				BF8D80381DBCB37F00D71FD1 /* YJIAPStore.m in Sources */,
 				BFF3E2561D9CE53A00788F51 /* YJShareControl.m in Sources */,
 				BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */,
