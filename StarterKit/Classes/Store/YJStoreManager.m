@@ -17,24 +17,24 @@ DEF_SINGLETON(YJStoreManager);
     return self;
 }
 
-- (void)registerStore:(id <YJStoreProtocol>)store forPayment:(YJStoreType)type {
+- (void)registerStore:(id<YJStoreProtocol>)store name:(NSString*)name {
     if (nil != store) {
-        self.storeMap[@(type)] = store;
+        self.storeMap[name] = store;
     }
 }
 
-- (id <YJStoreProtocol>)store:(YJStoreType)type {
-    return self.storeMap[@(type)];
+- (id<YJStoreProtocol>)store:(NSString*)name {
+    return self.storeMap[name];
+}
+
+- (NSDictionary*)registeredStores {
+    return _storeMap;
 }
 
 - (void)checkOrders {
 }
 
 - (void)prepare {
-    id<YJStoreProtocol> s = [self store:NWStoreApple];
-    if (nil != s) {
-        [s requestProducts:self.itemList completion:nil];
-    }
 }
 
 @end

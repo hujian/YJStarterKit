@@ -1,33 +1,29 @@
 /**
  * @brief   支付管理类
- * @author  wudb
+ * @author  hj
  * @date    16/10/21
  */
 
 #import <Foundation/Foundation.h>
 #import "YJStore.h"
 #import "YJSingletion.h"
+#import "YJStoreProduct.h"
 
 @interface YJStoreManager : NSObject
 
 AS_SINGLETON(YJStoreManager);
 
-// 从服务器取回来的商品列表, [PayItem]
+// 商品列表，是YJStoreProduct的数组
 @property (nonatomic, strong) NSArray *itemList;
 
-/**
- * 注册支付方式
- * @param store 对应支付方式实例
- * @param type 商店类型
- */
-- (void)registerStore:(id<YJStoreProtocol>)store forPayment:(YJStoreType)type;
+// name: 商店名称， store: 支付实现
+- (void)registerStore:(id<YJStoreProtocol>)store name:(NSString*)name;
 
-/**
- * 根据类型获取商店句柄
- * @param type 商店类型
- * @return
- */
-- (id<YJStoreProtocol>)store:(YJStoreType)type;
+// 按照商店名称，返回支付实现
+- (id<YJStoreProtocol>)store:(NSString*)name;
+
+// 返回已注册的，商店名称/支付实现
+- (NSDictionary*)registeredStores;
 
 /**
  * 恢复失败订单
