@@ -25,6 +25,9 @@
 // 默认DEBUG下面YES，release下面NO
 - (BOOL)needTestCase;
 
+// 是否需要推送
+- (BOOL)needPush;
+
 @property (nonatomic, strong) UIWindow *window;
 
 @end

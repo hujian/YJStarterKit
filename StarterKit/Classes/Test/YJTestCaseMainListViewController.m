@@ -10,6 +10,7 @@
 #import "TestYJEffectViewController.h"
 #import "YJTestMarqueeViewController.h"
 #import "YJTestHTTPViewController.h"
+#import "YJTestSecurityViewController.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -107,7 +108,10 @@
         }];
         
         section = [self addSection:@"工具箱"];
-        [self addTestCase:@"待定" toSection:section block:^() {
+        [self addTestCase:@"安全" toSection:section block:^() {
+            @strongify(self);
+            YJTestSecurityViewController* vc = [[YJTestSecurityViewController alloc] initWithNibName:nil bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
         }];
         
         section = [self addSection:@"第三方功能"];

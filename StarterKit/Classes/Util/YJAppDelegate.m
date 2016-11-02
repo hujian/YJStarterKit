@@ -45,7 +45,6 @@
     [YJLogger setup];
     [YJLogger startLogVCProgress];
 #endif
-
 }
 
 - (UIViewController*)rootViewController {
@@ -80,6 +79,10 @@
 #else
     return NO;
 #endif
+}
+
+- (BOOL)needPush {
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

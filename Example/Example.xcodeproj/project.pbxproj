@@ -44,9 +44,13 @@
 		BF8D803A1DBCB37F00D71FD1 /* YJStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8D80341DBCB37F00D71FD1 /* YJStoreManager.m */; };
 		BF8D80401DBCE36F00D71FD1 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF8D803E1DBCE36F00D71FD1 /* AlipaySDK.bundle */; };
 		BF8D80451DBCE75B00D71FD1 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8D803F1DBCE36F00D71FD1 /* AlipaySDK.framework */; };
+		BF929E861DC860E800CE8BA8 /* YJMD5Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E851DC860E800CE8BA8 /* YJMD5Signer.m */; };
+		BF929E8A1DC8628E00CE8BA8 /* YJTestSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E891DC8628E00CE8BA8 /* YJTestSecurityViewController.m */; };
+		BF929E8D1DC86A6700CE8BA8 /* YJAESSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E8C1DC86A6700CE8BA8 /* YJAESSigner.m */; };
+		BF929E901DC86A9000CE8BA8 /* YJRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E8F1DC86A9000CE8BA8 /* YJRSASigner.m */; };
+		BF929E971DC9F13C00CE8BA8 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E961DC9F13C00CE8BA8 /* RSA.m */; };
 		BFA4B38B1DBDB2DB0039E012 /* YJStoreProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38A1DBDB2DB0039E012 /* YJStoreProduct.m */; };
 		BFA4B38E1DBDBB200039E012 /* YJStorePayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38D1DBDBB200039E012 /* YJStorePayResult.m */; };
-		BFA4B3981DBE0F3E0039E012 /* YJStringSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */; };
 		BFA4B39B1DBE1CB90039E012 /* YJBase64Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */; };
 		BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE2297F1DA2458700726408 /* YJTestCaseListViewController.m */; };
 		BFE229831DA2458700726408 /* YJTestCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE229811DA2458700726408 /* YJTestCaseViewController.m */; };
@@ -136,14 +140,22 @@
 		BF8D80341DBCB37F00D71FD1 /* YJStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStoreManager.m; sourceTree = "<group>"; };
 		BF8D803E1DBCE36F00D71FD1 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		BF8D803F1DBCE36F00D71FD1 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		BF929E841DC860E800CE8BA8 /* YJMD5Signer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJMD5Signer.h; sourceTree = "<group>"; };
+		BF929E851DC860E800CE8BA8 /* YJMD5Signer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMD5Signer.m; sourceTree = "<group>"; };
+		BF929E881DC8628E00CE8BA8 /* YJTestSecurityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestSecurityViewController.h; sourceTree = "<group>"; };
+		BF929E891DC8628E00CE8BA8 /* YJTestSecurityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJTestSecurityViewController.m; sourceTree = "<group>"; };
+		BF929E8B1DC86A6700CE8BA8 /* YJAESSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJAESSigner.h; sourceTree = "<group>"; };
+		BF929E8C1DC86A6700CE8BA8 /* YJAESSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAESSigner.m; sourceTree = "<group>"; };
+		BF929E8E1DC86A9000CE8BA8 /* YJRSASigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJRSASigner.h; sourceTree = "<group>"; };
+		BF929E8F1DC86A9000CE8BA8 /* YJRSASigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJRSASigner.m; sourceTree = "<group>"; };
+		BF929E951DC9F13C00CE8BA8 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		BF929E961DC9F13C00CE8BA8 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
 		BFA4B3891DBDB2DB0039E012 /* YJStoreProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStoreProduct.h; sourceTree = "<group>"; };
 		BFA4B38A1DBDB2DB0039E012 /* YJStoreProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStoreProduct.m; sourceTree = "<group>"; };
 		BFA4B38C1DBDBB200039E012 /* YJStorePayResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStorePayResult.h; sourceTree = "<group>"; };
 		BFA4B38D1DBDBB200039E012 /* YJStorePayResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStorePayResult.m; sourceTree = "<group>"; };
 		BFA4B38F1DBDD3FE0039E012 /* YJCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YJCommon.h; path = Util/YJCommon.h; sourceTree = "<group>"; };
-		BFA4B3961DBE0F3E0039E012 /* YJStringSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStringSigner.h; sourceTree = "<group>"; };
-		BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStringSigner.m; sourceTree = "<group>"; };
 		BFA4B3991DBE1CB90039E012 /* YJBase64Signer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJBase64Signer.h; sourceTree = "<group>"; };
 		BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJBase64Signer.m; sourceTree = "<group>"; };
 		BFE2297E1DA2458700726408 /* YJTestCaseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJTestCaseListViewController.h; sourceTree = "<group>"; };
@@ -412,6 +424,7 @@
 		BF8C50B31D9A4D6C00052FDD /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				BF929E871DC8627700CE8BA8 /* Security */,
 				BFE2297D1DA2458700726408 /* Base */,
 				BF81668F1DA2363800629AFD /* Animation */,
 				BF8166941DA2363800629AFD /* HTTP */,
@@ -456,13 +469,28 @@
 			path = AliPay;
 			sourceTree = "<group>";
 		};
+		BF929E871DC8627700CE8BA8 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				BF929E881DC8628E00CE8BA8 /* YJTestSecurityViewController.h */,
+				BF929E891DC8628E00CE8BA8 /* YJTestSecurityViewController.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
 		BFA4B3921DBE04B50039E012 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				BFA4B3961DBE0F3E0039E012 /* YJStringSigner.h */,
-				BFA4B3971DBE0F3E0039E012 /* YJStringSigner.m */,
+				BF929E951DC9F13C00CE8BA8 /* RSA.h */,
+				BF929E961DC9F13C00CE8BA8 /* RSA.m */,
 				BFA4B3991DBE1CB90039E012 /* YJBase64Signer.h */,
 				BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */,
+				BF929E841DC860E800CE8BA8 /* YJMD5Signer.h */,
+				BF929E851DC860E800CE8BA8 /* YJMD5Signer.m */,
+				BF929E8B1DC86A6700CE8BA8 /* YJAESSigner.h */,
+				BF929E8C1DC86A6700CE8BA8 /* YJAESSigner.m */,
+				BF929E8E1DC86A9000CE8BA8 /* YJRSASigner.h */,
+				BF929E8F1DC86A9000CE8BA8 /* YJRSASigner.m */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -681,6 +709,7 @@
 				BFF3E25A1DA2040F00788F51 /* YJHTTPSessionManager.m in Sources */,
 				BFF38F031DA795C700CEC415 /* YJImageView.m in Sources */,
 				BF8C50BC1D9A513D00052FDD /* YJTestCaseMainListViewController.m in Sources */,
+				BF929E861DC860E800CE8BA8 /* YJMD5Signer.m in Sources */,
 				BF8166AC1DA2363800629AFD /* YJTestUserViewViewController.m in Sources */,
 				BFA4B38E1DBDBB200039E012 /* YJStorePayResult.m in Sources */,
 				BF8166A81DA2363800629AFD /* YJTestLabelViewController.m in Sources */,
@@ -711,19 +740,22 @@
 				BFF3E23D1D9B8F6C00788F51 /* YJXibView.m in Sources */,
 				BFF3E2371D9B853400788F51 /* YJWebViewController.m in Sources */,
 				BFF3E2401D9B936600788F51 /* YJUserView.m in Sources */,
+				BF929E971DC9F13C00CE8BA8 /* RSA.m in Sources */,
 				BFE229821DA2458700726408 /* YJTestCaseListViewController.m in Sources */,
 				BF8166A41DA2363800629AFD /* TestYJEffectViewController.m in Sources */,
 				BFFA7B111D9AD4B6002A77C7 /* UITextView+YJStarterKit.m in Sources */,
+				BF929E901DC86A9000CE8BA8 /* YJRSASigner.m in Sources */,
 				BF8C509F1D98D04C00052FDD /* NSDate+YJStarterKit.m in Sources */,
 				BF2C22ED1D97B12F0050CACC /* main.m in Sources */,
-				BFA4B3981DBE0F3E0039E012 /* YJStringSigner.m in Sources */,
 				BFF896141DA51EA40067ABD2 /* NSString+YJStarterKit.m in Sources */,
 				BF62F1031D97B3CE004D3C73 /* YJTools.m in Sources */,
 				BF8D80391DBCB37F00D71FD1 /* YJStore.m in Sources */,
 				BF8166A71DA2363800629AFD /* YJTestButtonViewController.m in Sources */,
 				BFA4B39B1DBE1CB90039E012 /* YJBase64Signer.m in Sources */,
 				BF8D80381DBCB37F00D71FD1 /* YJIAPStore.m in Sources */,
+				BF929E8D1DC86A6700CE8BA8 /* YJAESSigner.m in Sources */,
 				BFF3E2561D9CE53A00788F51 /* YJShareControl.m in Sources */,
+				BF929E8A1DC8628E00CE8BA8 /* YJTestSecurityViewController.m in Sources */,
 				BFF3E2311D9B80F300788F51 /* YJButton.m in Sources */,
 				BF8D803A1DBCB37F00D71FD1 /* YJStoreManager.m in Sources */,
 			);

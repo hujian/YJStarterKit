@@ -2,12 +2,12 @@
 
 @implementation YJBase64Signer
 
-- (NSString *)algorithmName {
-    return @"Base64Signer";
+- (NSString *)signString:(NSString *)string {
+    return [self signData:[string dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
-- (NSString *)signString:(NSString *)string {
-    return nil;
+- (NSString *)signData:(NSData *)data {
+    return [data base64EncodedStringWithOptions:0];
 }
 
 @end

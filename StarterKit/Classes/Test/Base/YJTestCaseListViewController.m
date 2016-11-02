@@ -6,8 +6,6 @@
 
 @implementation YJTestCaseListViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
