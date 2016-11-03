@@ -4,7 +4,6 @@
 
 @implementation YJTools
 
-
 + (BOOL) isValidateMobile:(NSString *)mobile
 {
     NSString * phoneRegex = @"^1(3[0-9]|4[57]|5[0-35-9]|(7[0[059]|6｜7｜8])|8[0-9])\\d{8}$";
@@ -38,6 +37,10 @@
         idfa = @"empty";
     }
     return idfa;
+}
+
++ (float)systemVersion {
+    return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
 + (NSString *)appVersion {
@@ -76,6 +79,12 @@
     NSError* error = nil;
     NSString *res = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     return res;
+}
+
++ (void)clearAspeckHook:(id<AspectToken>)token {
+    if (token) {
+        [token remove];
+    }
 }
 
 @end

@@ -48,11 +48,11 @@
 + (void)startLogVCProgress {
     [UIViewController aspect_hookSelector:@selector(viewDidLoad) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> aspectInfo) {
         LogVerbose(@"flow | %@'s viewDidLoad called", NSStringFromClass([aspectInfo.instance class]));
-    } error:NULL];
+    } error:nil];
     
     [UIViewController aspect_hookSelector:NSSelectorFromString(@"dealloc") withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
         LogVerbose(@"flow | %@'s dealloc called", NSStringFromClass([aspectInfo.instance class]));
-    } error:NULL];
+    } error:nil];
 }
 
 @end

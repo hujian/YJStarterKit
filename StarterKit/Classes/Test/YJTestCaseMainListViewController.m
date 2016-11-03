@@ -11,6 +11,7 @@
 #import "YJTestMarqueeViewController.h"
 #import "YJTestHTTPViewController.h"
 #import "YJTestSecurityViewController.h"
+#import "YJPush.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -112,6 +113,10 @@
             @strongify(self);
             YJTestSecurityViewController* vc = [[YJTestSecurityViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"推送" toSection:section block:^() {
+            [[YJPush sharedInstance] setup];
         }];
         
         section = [self addSection:@"第三方功能"];

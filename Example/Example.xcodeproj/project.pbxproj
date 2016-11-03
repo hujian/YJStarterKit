@@ -49,6 +49,7 @@
 		BF929E8D1DC86A6700CE8BA8 /* YJAESSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E8C1DC86A6700CE8BA8 /* YJAESSigner.m */; };
 		BF929E901DC86A9000CE8BA8 /* YJRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E8F1DC86A9000CE8BA8 /* YJRSASigner.m */; };
 		BF929E971DC9F13C00CE8BA8 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E961DC9F13C00CE8BA8 /* RSA.m */; };
+		BF929E9A1DC9F26200CE8BA8 /* YJPush.m in Sources */ = {isa = PBXBuildFile; fileRef = BF929E991DC9F26200CE8BA8 /* YJPush.m */; };
 		BFA4B38B1DBDB2DB0039E012 /* YJStoreProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38A1DBDB2DB0039E012 /* YJStoreProduct.m */; };
 		BFA4B38E1DBDBB200039E012 /* YJStorePayResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B38D1DBDBB200039E012 /* YJStorePayResult.m */; };
 		BFA4B39B1DBE1CB90039E012 /* YJBase64Signer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA4B39A1DBE1CB90039E012 /* YJBase64Signer.m */; };
@@ -150,6 +151,9 @@
 		BF929E8F1DC86A9000CE8BA8 /* YJRSASigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJRSASigner.m; sourceTree = "<group>"; };
 		BF929E951DC9F13C00CE8BA8 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		BF929E961DC9F13C00CE8BA8 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		BF929E981DC9F26200CE8BA8 /* YJPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJPush.h; sourceTree = "<group>"; };
+		BF929E991DC9F26200CE8BA8 /* YJPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJPush.m; sourceTree = "<group>"; };
+		BF929E9B1DCAD52F00CE8BA8 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		BF9C985F1D994A3200B7212F /* YJSingletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSingletion.h; sourceTree = "<group>"; };
 		BFA4B3891DBDB2DB0039E012 /* YJStoreProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJStoreProduct.h; sourceTree = "<group>"; };
 		BFA4B38A1DBDB2DB0039E012 /* YJStoreProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJStoreProduct.m; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 		BF2C22EA1D97B12F0050CACC /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				BF929E9B1DCAD52F00CE8BA8 /* Example.entitlements */,
 				BF62F0E71D97B343004D3C73 /* StarterKit */,
 				BF2C22EE1D97B12F0050CACC /* AppDelegate.h */,
 				BF2C22EF1D97B12F0050CACC /* AppDelegate.m */,
@@ -320,6 +325,8 @@
 				BF62F1011D97B3CE004D3C73 /* YJLogger.h */,
 				BF62F0FF1D97B3CE004D3C73 /* YJLogger.m */,
 				BF9C985F1D994A3200B7212F /* YJSingletion.h */,
+				BF929E981DC9F26200CE8BA8 /* YJPush.h */,
+				BF929E991DC9F26200CE8BA8 /* YJPush.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -586,6 +593,12 @@
 				TargetAttributes = {
 					BF2C22E71D97B12F0050CACC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EX9626XB93;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -719,6 +732,7 @@
 				BF8C50961D98C43700052FDD /* UIColor+YJStarterKit.m in Sources */,
 				BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */,
 				BFA4B38B1DBDB2DB0039E012 /* YJStoreProduct.m in Sources */,
+				BF929E9A1DC9F26200CE8BA8 /* YJPush.m in Sources */,
 				BF62F1051D97B3CE004D3C73 /* YJLogger.m in Sources */,
 				BF8296511DA3B35D007AB033 /* YJHTTPLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
@@ -870,6 +884,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				DEVELOPMENT_TEAM = EX9626XB93;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../StarterKit/Libs/AliPay\"",
@@ -881,7 +897,7 @@
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocai.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -896,6 +912,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				DEVELOPMENT_TEAM = EX9626XB93;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../StarterKit/Libs/AliPay\"",
@@ -907,7 +925,7 @@
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = test.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bocai.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

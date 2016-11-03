@@ -5,6 +5,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "Aspects.h"
 
 @interface YJTools : NSObject
 
@@ -22,6 +23,9 @@
 
 // 主版本号
 + (NSString *)appVersion;
+
+// 系统版本号
++ (float)systemVersion;
 
 // build号
 + (NSString *)appBuild;
@@ -56,5 +60,8 @@
  卫星通信 1349
  */
 + (BOOL)isValidateMobile:(NSString *)mobile;
+
+// 清理Aspect的hook
++ (void)clearAspeckHook:(id<AspectToken>)token;
 
 @end
