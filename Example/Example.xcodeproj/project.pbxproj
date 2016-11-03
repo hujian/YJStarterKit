@@ -10,6 +10,7 @@
 		82A6DB3E0961F76C9E0FBEBA /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 116D51A08C1B9AABB1C76ED3 /* libPods-Example.a */; };
 		BF17C9521D9F9E0200CD566C /* YJMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */; };
 		BF17C9581D9FAAF300CD566C /* YJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17C9571D9FAAF300CD566C /* YJLabel.m */; };
+		BF19CC7E1DCB1CB60098259E /* YJImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19CC7D1DCB1CB60098259E /* YJImagePicker.m */; };
 		BF2C22ED1D97B12F0050CACC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EC1D97B12F0050CACC /* main.m */; };
 		BF2C22F01D97B12F0050CACC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C22EF1D97B12F0050CACC /* AppDelegate.m */; };
 		BF2C22F81D97B12F0050CACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C22F71D97B12F0050CACC /* Assets.xcassets */; };
@@ -78,6 +79,8 @@
 		BF17C9511D9F9E0200CD566C /* YJMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJMarqueeView.m; sourceTree = "<group>"; };
 		BF17C9561D9FAAF300CD566C /* YJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJLabel.h; sourceTree = "<group>"; };
 		BF17C9571D9FAAF300CD566C /* YJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJLabel.m; sourceTree = "<group>"; };
+		BF19CC7C1DCB1CB60098259E /* YJImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJImagePicker.h; sourceTree = "<group>"; };
+		BF19CC7D1DCB1CB60098259E /* YJImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJImagePicker.m; sourceTree = "<group>"; };
 		BF2C22E81D97B12F0050CACC /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C22EC1D97B12F0050CACC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF2C22EE1D97B12F0050CACC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 		BF62F0F31D97B343004D3C73 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				BF19CC7C1DCB1CB60098259E /* YJImagePicker.h */,
+				BF19CC7D1DCB1CB60098259E /* YJImagePicker.m */,
 				BFF3E23E1D9B936600788F51 /* YJUserView.h */,
 				BFF3E23F1D9B936600788F51 /* YJUserView.m */,
 				BF8C50BF1D9A7BC900052FDD /* YJCircleView.h */,
@@ -737,6 +742,7 @@
 				BF8296511DA3B35D007AB033 /* YJHTTPLogger.m in Sources */,
 				BF62F1041D97B3CE004D3C73 /* YJAppDelegate.m in Sources */,
 				BF2F01421DA4D26F00D41F3F /* YJHTTPTestManager.m in Sources */,
+				BF19CC7E1DCB1CB60098259E /* YJImagePicker.m in Sources */,
 				BF8166A91DA2363800629AFD /* YJTestMarqueeViewController.m in Sources */,
 				BF8166A61DA2363800629AFD /* YJTestHTTPViewController.m in Sources */,
 				BF8C50A21D990BE000052FDD /* YJTableViewController.m in Sources */,

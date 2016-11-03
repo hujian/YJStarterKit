@@ -4,6 +4,7 @@
 #import "YJTestCaseMainListViewController.h"
 #import "YJTools.h"
 #import "YJReachabilityManager.h"
+#import "YJPush.h"
 
 @implementation YJAppDelegate
 
@@ -34,6 +35,11 @@
     if ([self showSplashView]) {
         YJSplashView* splash = [[YJSplashView alloc] initWithFrame:self.window.bounds];
         [self.window addSubview:splash];
+    }
+    
+    // 推送
+    if ([self needPush]) {
+        [[YJPush sharedInstance] setup];
     }
   
     return YES;
@@ -82,7 +88,7 @@
 }
 
 - (BOOL)needPush {
-    return YES;
+    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

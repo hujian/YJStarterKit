@@ -12,6 +12,7 @@
 #import "YJTestHTTPViewController.h"
 #import "YJTestSecurityViewController.h"
 #import "YJPush.h"
+#import "YJImagePicker.h"
 
 @interface YJTestCaseMainListViewController ()
 
@@ -85,6 +86,13 @@
             
             YJTestUserViewViewController* vc = [[YJTestUserViewViewController alloc] initWithNibName:nil bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
+        }];
+        
+        [self addTestCase:@"选择照片" toSection:section block:^() {
+            @strongify(self);
+
+            [[YJImagePicker sharedInstance] showPickerInController:self completion:^(UIImage* image) {
+            }];
         }];
         
         [self addTestCase:@"跑马灯" toSection:section block:^() {
