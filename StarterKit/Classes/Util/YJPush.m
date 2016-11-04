@@ -6,6 +6,7 @@
 
 @property (nonatomic, strong) id<AspectToken> recieveTokenHook;
 @property (nonatomic, strong) id<AspectToken> recieveTokenFailedHook;
+@property (nonatomic, strong) id<AspectToken> appLaunchHook;
 @property (nonatomic, strong) id<AspectToken> recieveNotificationHook;
 
 @end
@@ -31,11 +32,24 @@ DEF_SINGLETON(YJPush);
                                                               [self handleDeviceTokenFailed:aspectInfo];
                                                           } error:nil];
     
+    [YJTools clearAspeckHook:_appLaunchHook];
+    self.recieveTokenHook = [YJAppDelegate aspect_hookSelector:@selector(application:didFinishLaunchingWithOptions:)
+                                                   withOptions:AspectPositionAfter
+                                                    usingBlock:^(id<AspectInfo> aspectInfo) {
+                                                        NSArray* params = aspectInfo.arguments;
+                                                        NSDictionary* launchOptions = params[1];
+                                                        if (launchOptions.isNotEmpty) {
+                                                            [self handleDeviceToken:launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey]];
+                                                        }
+                                                    } error:nil];
+    
     [YJTools clearAspeckHook:_recieveNotificationHook];
     self.recieveNotificationHook = [YJAppDelegate aspect_hookSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)
                                                          withOptions:AspectPositionAfter
                                                           usingBlock:^(id<AspectInfo> aspectInfo) {
-                                                              [self handleReciveNotification:aspectInfo];
+                                                              NSArray* params = aspectInfo.arguments;
+                                                              NSDictionary* userInfo = params[1];
+                                                              [self handleReciveNotification:userInfo];
                                                           } error:nil];
 }
 
@@ -57,13 +71,29 @@ DEF_SINGLETON(YJPush);
     }
 }
 
-- (void)handleReciveNotification:(id<AspectInfo>)aspectInfo {
-    NSArray* params = aspectInfo.arguments;
-    if (params.count >= 2) {
-        NSDictionary* userInfo = params[1];
+- (void)handleReciveNotification:(NSDictionary*)userInfo {
+    if (userInfo.isNotEmpty) {
         self.remoteNotification = userInfo;
         LogVerbose(@"Push | recieve notification: %@", userInfo);
     }
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+    
+    [self handleReciveNotification:notification.request.content.userInfo];
+    
+    completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert);
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response
+         withCompletionHandler:(void (^)())completionHandler {
+    
+    [self handleReciveNotification:response.notification.request.content.userInfo];
+    
+    completionHandler(UNNotificationPresentationOptionBadge | UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert);
 }
 
 - (void)registerRemoteNotification {
