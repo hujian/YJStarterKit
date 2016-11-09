@@ -88,7 +88,7 @@
 }
 
 - (BOOL)needPush {
-    return NO;
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

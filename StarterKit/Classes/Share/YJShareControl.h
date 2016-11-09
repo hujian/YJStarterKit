@@ -10,22 +10,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YJShareControl : NSObject
-
-// shareSDKAppID(必须)
-//    请去到http://mob.com/login 登录后台进行应用注册
-// weChatID / weChatToken
-//    去微信开放平台申请https://open.weixin.qq.com/
-// QQID / QQToken
-//    去腾讯开放平台申请http://open.qq.com/
-
-// 必须在AppDelegate的launch函数中调用该方法
-+ (void)setup:(NSString*)shareSDKAppID
-     weChatID:(NSString*)weChatID
-  weChatToken:(NSString*)weChatToken
-         QQID:(NSString*)QQID
-      QQToken:(NSString*)QQToken
-     weiboID:(NSString*)weiboID
-  weiboToken:(NSString*)weiboToken;
-
-@end
+//@interface YJShareControl : NSObject
+//
+//// shareSDKAppID(必须)
+////    请去到http://mob.com/login 登录后台进行应用注册
+//// weChatID / weChatToken
+////    去微信开放平台申请https://open.weixin.qq.com/
+//// QQID / QQToken
+////    去腾讯开放平台申请http://open.qq.com/
+//
+//// 必须在AppDelegate的launch函数中调用该方法
+//+ (void)setup:(NSString*)shareSDKAppID
+//     weChatID:(NSString*)weChatID
+//  weChatToken:(NSString*)weChatToken
+//         QQID:(NSString*)QQID
+//      QQToken:(NSString*)QQToken
+//     weiboID:(NSString*)weiboID
+//  weiboToken:(NSString*)weiboToken;
+//
+//@end
